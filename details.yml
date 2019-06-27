@@ -37,6 +37,10 @@ languages:
 - language: Inglés
   proficiency: Avanzado
 
+courses:
+- name: Fundamentos de Robótica
+  intitution: Adams Formación
+
 # Settings
 mainfont: EB Garamond
 fontsize: 11pt
