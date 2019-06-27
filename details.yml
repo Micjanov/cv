@@ -20,9 +20,11 @@ education:
   city: Ceuta
 
 skills:
-- C++, Java
-- \LaTeX\, Git
-- Linux, FreeBSD
+- C++
+- Java
+- UNIX
+- \LaTeX
+- Git
 
 languages:
 - language: Español
