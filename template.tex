@@ -146,4 +146,11 @@ $for(languages)$
 $endfor$
 $endif$
 
+$if(courses)$
+\section*{Cursos}
+$for(courses)$
+\emph{$courses.name$} ($courses.intitution$)\\
+$endfor$
+$endif$
+
 \end{document}
