@@ -281,38 +281,38 @@ $endfor$
 %
 %
 \begin{minipage}[t]{0.64\textwidth}
-  \section{experience}
-  %
-  \setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
-  \setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
-  %
-  %  POSITIONS
-  \begin{tabular}{@{}p{\hwide}p{\hwideright}}
-    \arrayrulecolor{light-gray}
-    $for(experience)$
-      \parbox[t][][t]{\hwide}{%
-          \raggedright
-          \company{$experience.company$}\\
-          \vspace{\buffer}
-          \lightfont{%
-          $experience.years.start$ \textendash{} $experience.years.end$\\
-          $if(experience.location)$
-            $experience.location$\\
-          $endif$
-          \vspace{\buffer}}
-          $if(experience.group)$
-            \lightsmall{\emph{$experience.group$}}%
-          $endif$
-        } & %
-      \parbox[t][][t]{\hwideright}{%
-          \raggedright
-          \position{$experience.position$}\\
-          \vspace{\buffer}
-          \lightsmall{$experience.description$}
-        }\\
-        \spacerule
-    $endfor$
-  \end{tabular}
+  %\section{experience}
+  %%
+  %\setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
+  %\setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
+  %%
+  %%  POSITIONS
+  %\begin{tabular}{@{}p{\hwide}p{\hwideright}}
+    %\arrayrulecolor{light-gray}
+    %$for(experience)$
+      %\parbox[t][][t]{\hwide}{%
+          %\raggedright
+          %\company{$experience.company$}\\
+          %\vspace{\buffer}
+          %\lightfont{%
+          %$experience.years.start$ \textendash{} $experience.years.end$\\
+          %$if(experience.location)$
+            %$experience.location$\\
+          %$endif$
+          %\vspace{\buffer}}
+          %$if(experience.group)$
+            %\lightsmall{\emph{$experience.group$}}%
+          %$endif$
+        %} & %
+      %\parbox[t][][t]{\hwideright}{%
+          %\raggedright
+          %\position{$experience.position$}\\
+          %\vspace{\buffer}
+          %\lightsmall{$experience.description$}
+        %}\\
+        %\spacerule
+    %$endfor$
+  %\end{tabular}
 
 % LANGUAGES
 \section{languages}
@@ -321,7 +321,6 @@ $endfor$
 $for(languages)$
 \emphasized{$languages.language$} -- \lightbf{$languages.proficiency$} \\
 \smallskip
-% 
 $endfor$
 %
 %\section{publications}
