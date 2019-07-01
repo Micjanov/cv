@@ -65,11 +65,11 @@
 \definecolor{light-gray}{gray}{0.55}
 
 %FONTS
-\setmainfont{EB Garamond}
-\newfontfamily{\hlight}[UprightFont={* Light}]{EB Garamond}
+\setmainfont{Cormorant Garamond}
+\newfontfamily{\hlight}[UprightFont={* Light}]{Cormorant Garamond}
 %\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
 \defaultfontfeatures{
-    Path = /usr/local/texmf-dist/fonts/opentype/public/fontawesome/ }
+    Path = /usr/local/share/texmf-dist/fonts/opentype/public/fontawesome/ }
 \usepackage{fontawesome}  % glyphs for contact info
 
 % CUSTOM COMMANDS
@@ -203,7 +203,7 @@
     \renewcommand\arraystretch{1.25}
     \contactinfo
     \begin{tabular}[b]{@{}cl@{}}
-      \faEnvelopeO & \href{mailto:$email$}{$email$}\\ %{}
+      \faEnvelope & \href{mailto:$email$}{$email$}\\ %{}
       \faPhone & $phone$\\
     \end{tabular}
   \end{minipage}
@@ -313,6 +313,16 @@ $endfor$
         \spacerule
     $endfor$
   \end{tabular}
+
+% LANGUAGES
+\section{languages}
+% 
+\setlength{\parskip}{1mm}
+$for(languages)$
+\emphasized{$languages.language$} -- \lightbf{$languages.proficiency$} \\
+\smallskip
+% 
+$endfor$
 %
 %\section{publications}
 %\vspace{-0.5em}
