@@ -59,6 +59,10 @@ $endif$
 %--------------------------------
 \usepackage{graphicx}
 
+% SIDE BLOCK
+%--------------------------------
+
+
 % PDF SETUP
 %--------------------------------
 \usepackage{hyperref}
@@ -109,15 +113,23 @@ $if(intro)$
 $intro$
 $endif$
 
-\section*{Aptitudes Informáticas}
-$if(skills)$
+\section*{Lenguajes de Programación}
+$if(programming)$
 \begin{itemize}
-  $for(skills)$
-    \item $skills$
+  $for(programming)$
+    \item $programming$
   $endfor$
 \end{itemize}
 $endif$
 
+\section*{Software}
+$if(technologies)$
+\begin{itemize}
+  $for(technologies)$
+\item $technologies$
+  $endfor$
+\end{itemize}
+$endif$
 % \vfill
 
 \vspace{25pt}

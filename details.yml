@@ -19,12 +19,15 @@ education:
   institute: Universidad de Granada
   city: Ceuta
 
-skills:
+programming:
 - C++
 - Java
-- UNIX
+
+technologies:
+- UNIX (FreeBSD, Linux)
 - \LaTeX
 - Git
+- LEMP/FEMP Web Stack
 
 languages:
 - language: Español
