@@ -225,24 +225,6 @@
     }
   }
 %
-%
-% EDUCATION
-\section{education}
-%
-%\setlength{\parskip}{1mm}
-$for(education)$
-    \lightbf{$education.year$} \\
-    \smallskip
-    \emphasized{$education.degree$} \\
-    \emphasized{$education.focus$} \\
-    \smallskip
-    \lightfont{\textbf{$education.institution$} \\
-    \emph{$education.department$}} \\ %
-    %
-    \bigskip %
-$endfor$
-%
-%
   % PROGRAMMING
   \section{programming}
   \hlight
@@ -253,6 +235,7 @@ $endfor$
   \end{sortedlist}
 
   % TECHNOLOGIES
+  %
   \section{technologies}
   \hlight
   \begin{sortedlist}
@@ -262,6 +245,7 @@ $endfor$
   \end{sortedlist}
 
   % COURSES
+  %
   \section{courses}
   \hlight
   \begin{sortedlist}
@@ -281,6 +265,24 @@ $endfor$
 %
 %
 \begin{minipage}[t]{0.64\textwidth}
+  % EDUCATION
+  \section{education}
+  \setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
+  \setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
+  % 
+  \setlength{\parskip}{1mm}
+  $for(education)$
+  \lightbf{$education.year$} \\
+  \smallskip
+  \emphasized{$education.degree$} \\
+  \emphasized{$education.focus$} \\
+  \smallskip
+  \lightfont{\textbf{$education.institution$} \\
+    \emph{$education.department$}} \\ %
+  % 
+  \bigskip %
+  $endfor$
+  % 
   %\section{experience}
   %%
   %\setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
