@@ -12,7 +12,9 @@ about:         |
   I invented calculus and gravity. I also wrote a few important papers on optics, planetary motion, and math.
 
 education:
-- year:        2017
+- years:
+    start: 2017
+    end: presente
   degree:      Grado
   focus:       Ingeniería Informática
   institution: Ceuta

@@ -272,7 +272,7 @@
   % 
   \setlength{\parskip}{1mm}
   $for(education)$
-  \lightbf{$education.year$} \\
+  \lightfont{$education.years.start$ \textendash{} $education.years.end$} \\
   \smallskip
   \emphasized{$education.degree$} \\
   \emphasized{$education.focus$} \\
