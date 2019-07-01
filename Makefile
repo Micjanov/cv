@@ -26,7 +26,7 @@ PANDOC_OPTIONS :=
 
 # Normally this does not need to be changed:
 # works if the template is local or in ~/.pandoc/templates
-PANDOC_TMPL := resume.tex
+PANDOC_TMPL := template.latex
 
 ## ---- subdirectories (normally, no need to change) ----
 
