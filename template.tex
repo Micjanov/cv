@@ -243,12 +243,31 @@ $for(education)$
 $endfor$
 %
 %
-  % SKILLS
-  \section{skills}
+  % PROGRAMMING
+  \section{programming}
   \hlight
   \begin{sortedlist}
-    $for(skills)$
-    \sortitem{$skills$}
+    $for(programming)$
+    \sortitem{$programming$}
+    $endfor$
+  \end{sortedlist}
+
+  % TECHNOLOGIES
+  \section{technologies}
+  \hlight
+  \begin{sortedlist}
+    $for(technologies)$
+    \sortitem{$technologies$}
+    $endfor$
+  \end{sortedlist}
+
+  % COURSES
+  \section{courses}
+  \hlight
+  \begin{sortedlist}
+    $for(courses)$
+    \emphasized{$courses.name$} \\
+    \lightfont{\textbf{$courses.institution$} \\
     $endfor$
   \end{sortedlist}
 \end{flushleft}
