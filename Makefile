@@ -53,7 +53,7 @@ LATEXMK := latexmk $(if $(xelatex),-xelatex,-pdflatex="pdflatex %O %S") \
 ymls := $(filter-out $(addprefix $(yml_dir)/,$(EXCLUDE)),$(wildcard $(yml_dir)/*.yml))
 texs := $(patsubst %.yml,%.tex,$(ymls))
 pdfs := $(patsubst %.yml,%.pdf,$(ymls))
-#bibs := $(wildcard $(yml_dir)/*.bib)
+bibs := $(wildcard $(yml_dir)/*.bib)
 
 $(texs): %.tex: %.yml $(bibs) $(PANDOC_TMPL)
 	$(PANDOC) -o $@ $<	# pandoc template > .tex
