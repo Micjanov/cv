@@ -251,7 +251,7 @@
   \begin{sortedlist}
     $for(courses)$
     \emphasized{$courses.name$} \\
-    \lightfont{\textbf{$courses.institution$} \\
+    \lightfont{\textbf{$courses.institution$}} \\
     $endfor$
   \end{sortedlist}
 \end{flushleft}
