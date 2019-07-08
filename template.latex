@@ -254,7 +254,7 @@
   \section{courses}
   \hlight
   $for(courses)$
-  \emphasized{$courses.description$} \\
+  \emphasized{$courses.name$} \\
   \lightfont{\textbf{$courses.institution$}} \\
   $endfor$
 \end{flushleft}
@@ -335,11 +335,11 @@
   $for(languages)$
     \parbox[t][][t]{\hwide}{%
       \emphasized{$languages.language$}
-      \bigskip
+      \medskip
     } & %
     \parbox[t][][t]{\rightwide}{%
       \lightbf{$languages.proficiency$}
-      \bigskip
+      \medskip
     } \\ %
   $endfor$
 \end{tabular}

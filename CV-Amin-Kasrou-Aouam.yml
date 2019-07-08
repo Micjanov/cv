@@ -60,7 +60,7 @@ languages:
   proficiency: Avanzado
 
 courses:
-- description: "Fundamentos de Robótica"
+- name: Fundamentos de Robótica
   institution: Adams Formación
 
 #experience:
