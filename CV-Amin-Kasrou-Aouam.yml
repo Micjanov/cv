@@ -36,8 +36,9 @@ education:
   department:  "Universidad de Granada"
 
 programming:
-- C++
-- Java
+  - C++
+  - Java
+  - Shell
 
 technologies:
 - UNIX (FreeBSD, Linux)
