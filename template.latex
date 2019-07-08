@@ -198,7 +198,7 @@
     %\parbox[b][][b]{4.5cm}{\raggedright\headline}
   %\end{minipage} & %
   %
-  % CONTACT INFO (right)
+  % CONTACT INFO (middle)
   \begin{minipage}[b]{\centerwide}
     \renewcommand\arraystretch{1.25}
     \contactinfo
@@ -206,9 +206,14 @@
       \faEnvelope & \href{mailto:$email$}{$email$}\\ %{}
       \faPhone & $phone$\\
     \end{tabular}
-  \end{minipage}
+  \end{minipage} & %
+% PHOTO (right)
+  \begin{minipage}[b]{\rightwide}
+    \includegraphics[width=7em]{photo.png}
+  \end{minipage} 
 \end{tabular}
 \lighthrule
+
 %---------- MAIN BODY ----------
 %---------- LEFT SIDE ----------
 %\Mybox{
@@ -269,6 +274,7 @@
   \setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
   % 
   \setlength{\parskip}{1mm}
+  \begin{minipage}[b]{\rightwide}
   $for(education)$
   \lightfont{$education.years.start$ \textendash{} $education.years.end$} \\
   \smallskip
