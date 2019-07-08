@@ -194,12 +194,12 @@
   \end{minipage} & %
   %
   % HEADLINE (middle)
-  \begin{minipage}[b]{\centerwide}
-    \parbox[b][][b]{4.5cm}{\raggedright\headline}
-  \end{minipage} & %
+  %\begin{minipage}[b]{\centerwide}
+    %\parbox[b][][b]{4.5cm}{\raggedright\headline}
+  %\end{minipage} & %
   %
   % CONTACT INFO (right)
-  \begin{minipage}[b]{\rightwide}
+  \begin{minipage}[b]{\centerwide}
     \renewcommand\arraystretch{1.25}
     \contactinfo
     \begin{tabular}[b]{@{}cl@{}}
