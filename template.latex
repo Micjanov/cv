@@ -274,19 +274,23 @@
   \setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
   % 
   \setlength{\parskip}{1mm}
-  \begin{minipage}[b]{\rightwide}
-  $for(education)$
-  \lightfont{$education.years.start$ \textendash{} $education.years.end$} \\
-  \smallskip
-  \emphasized{$education.degree$} \\
-  \emphasized{$education.focus$} \\
-  \smallskip
-  \lightfont{\textbf{$education.institution$} \\
-    \emph{$education.campus$}} \\ %
-  % 
-  \bigskip %
-  $endfor$
-  \end{minipage}%
+  \begin{tabular}{@{}p{\hwide}p{\rightwide}}
+    \arrayrulecolor{light-gray}
+    $for(education)$
+      \parbox[t][][t]{\hwide}{%
+        \lightfont{$education.years.start$ \textendash{} $education.years.end$} \\
+        \smallskip
+        \emphasized{$education.degree$} \\
+        \smallskip
+        \emphasized{$education.focus$} \\
+      } & %
+      \parbox[t][][t]{\rightwide}{%
+        \lightfont{\textbf{$education.institution$} \\
+          \emph{$education.campus$}} \\ %
+        \bigskip %
+      } \\
+    $endfor$
+  \end{tabular}
   % 
   %\section{experience}
   %%
