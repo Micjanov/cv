@@ -78,7 +78,7 @@
   }}
 
   % old section title format
-  \titleformat{\section}{\fontsize{34pt}{40pt}\color{dark-gray}\normalfont}{}{0mm}{}[\titlerulethick]
+  \titleformat{\section}{\fontsize{32pt}{40pt}\color{dark-gray}\normalfont}{}{0mm}{}[\titlerulethick]
   %\titlespacing{\section}{0pt}{3pt}{3pt}
 
   \newcommand{\namefont}[1]{{%
