@@ -66,7 +66,7 @@ $(pdfs): %.pdf: %.tex
 	@echo $(bibs)
 	$(LATEXMK) $<
 
-all: $(pdfs)
+all: $(pdfs) clean
 
 # clean up everything except final pdfs
 clean:
