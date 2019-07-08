@@ -29,7 +29,7 @@ education:
 
 - years:
     start: 2017
-    end: presente
+    end: present
   degree:      BE
   focus:       Computer Engineering
   institution: Ceuta
@@ -41,10 +41,10 @@ programming:
   - Shell
 
 technologies:
-- UNIX (FreeBSD, Linux)
-- \LaTeX
-- Git
-- LEMP/FEMP Web Stack
+  - UNIX-like systems
+  - \LaTeX
+  - Git
+  - LEMP - FEMP Stack
 
 languages:
 - language: Español
