@@ -275,7 +275,6 @@
   % 
   \setlength{\parskip}{1mm}
   \begin{tabular}{@{}p{\hwide}p{\rightwide}}
-    \arrayrulecolor{light-gray}
     $for(education)$
       \parbox[t][][t]{\hwide}{%
         \lightfont{$education.years.start$ \textendash{} $education.years.end$} \\
@@ -329,10 +328,21 @@
 \section{languages}
 % 
 \setlength{\parskip}{1mm}
-$for(languages)$
-\emphasized{$languages.language$} -- \lightbf{$languages.proficiency$} \\
-\smallskip
-$endfor$
+\setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
+\setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
+
+\begin{tabular}{@{}p{\hwide}p{\rightwide}}
+  $for(languages)$
+    \parbox[t][][t]{\hwide}{%
+      \emphasized{$languages.language$}
+      \bigskip
+    } & %
+    \parbox[t][][t]{\rightwide}{%
+      \lightbf{$languages.proficiency$}
+      \bigskip
+    } \\ %
+  $endfor$
+\end{tabular}
 %
 %\section{publications}
 %\vspace{-0.5em}
