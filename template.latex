@@ -276,10 +276,11 @@
   \emphasized{$education.focus$} \\
   \smallskip
   \lightfont{\textbf{$education.institution$} \\
-    \emph{$education.department$}} \\ %
+    \emph{$education.campus$}} \\ %
   % 
   \bigskip %
   $endfor$
+  \end{minipage}%
   % 
   %\section{experience}
   %%
