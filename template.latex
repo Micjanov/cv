@@ -248,12 +248,10 @@
   %
   \section{courses}
   \hlight
-  \begin{sortedlist}
-    $for(courses)$
-    \emphasized{$courses.name$} \\
-    \lightfont{\textbf{$courses.institution$}} \\
-    $endfor$
-  \end{sortedlist}
+  $for(courses)$
+  \emphasized{$courses.description$} \\
+  \lightfont{\textbf{$courses.institution$}} \\
+  $endfor$
 \end{flushleft}
 \end{minipage}%
 %
