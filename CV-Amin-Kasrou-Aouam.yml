@@ -5,18 +5,33 @@ phone:         +34 658591161
 email:         akasroua@gmail.com
 #publications:  '\*'
 
-headline:      |
-  Trolaso
+#headline:      |
 
 about:         |
   I invented calculus and gravity. I also wrote a few important papers on optics, planetary motion, and math.
 
 education:
 - years:
+    start: 2013
+    end: 2015
+  degree:      MD
+  focus:       Medicine
+  institution: Châtenay-Malabry
+  department:  "Université Paris-Sud"
+
+- years:
+    start: 2015
+    end: 2017
+  degree:      MD
+  focus:       Medicine
+  institution: Sevilla
+  department:  "Universidad de Sevilla"
+
+- years:
     start: 2017
     end: presente
-  degree:      Grado
-  focus:       Ingeniería Informática
+  degree:      BE
+  focus:       Computer Engineering
   institution: Ceuta
   department:  "Universidad de Granada"
 
@@ -44,7 +59,7 @@ languages:
   proficiency: Avanzado
 
 courses:
-- name: Fundamentos de Robótica
+- description: "Fundamentos de Robótica"
   institution: Adams Formación
 
 #experience:
