@@ -214,8 +214,8 @@
 \end{tabular}
 \lighthrule
 %---------- MAIN BODY ----------
-% ABOUT
-\section{about}
+% EXTRACTO
+\section{extracto}
 \parbox[t][][t]{\textwidth}{
     $about$
 }
@@ -224,8 +224,8 @@
 \begin{minipage}[t]{0.31\textwidth}
   \raggedright
     %\begin{flushleft}
-    % PROGRAMMING
-    \section{programming}
+    % PROGRAMACIÓN
+    \section{programación}
     \hlight
     \begin{sortedlist}
       $for(programming)$
@@ -233,9 +233,9 @@
       $endfor$
     \end{sortedlist}
 
-    % TECHNOLOGIES
+    % SOFTWARE
     %
-    \section{technologies}
+    \section{software}
     \hlight
     \begin{sortedlist}
       $for(technologies)$
@@ -243,9 +243,9 @@
       $endfor$
     \end{sortedlist}
 
-    % COURSES
+    % CURSOS
     %
-    \section{courses}
+    \section{cursos}
     \hlight
     $for(courses)$
     \emphasized{$courses.name$} \\
@@ -262,8 +262,8 @@
 %
 %
 \begin{minipage}[t]{0.64\textwidth}
-  % EDUCATION
-  \section{education}
+  % FORMACIÓN ACADÉMICA
+  \section{formación académica}
   \setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
   \setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
   % 
@@ -319,7 +319,7 @@
   %\end{tabular}
 
   % LANGUAGES
-  \section{languages}
+  \section{idiomas}
   % 
   \setlength{\parskip}{1mm}
   \setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}

@@ -8,7 +8,7 @@ email:         akasroua@gmail.com
 #headline:      |
 
 about:         |
-  Computer Engineering student ready to step his toes in the job market.
+  Estudiante de Ingeniería Informática, con motivación para entrar en el mundo laboral con el fin de familiarizarme con las mecánicas de éste.
 
 education:
 - years:
@@ -41,7 +41,7 @@ programming:
   - Shell
 
 technologies:
-  - UNIX-like systems
+  - Sistemas UNIX
   - \LaTeX
   - Git
   - LEMP - FEMP Stack
