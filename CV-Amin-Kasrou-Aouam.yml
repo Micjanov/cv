@@ -47,17 +47,17 @@ technologies:
   - LEMP - FEMP Stack
 
 languages:
-- language: Español
-  proficiency: Nativo
+- language: Spanish
+  proficiency: Native
 
-- language: Francés
-  proficiency: Nativo
+- language: French
+  proficiency: Native
 
-- language: Darija
-  proficiency: Nativo
+- language: Darija (Moroccan dialect)
+  proficiency: Native
 
-- language: Inglés
-  proficiency: Avanzado
+- language: English
+  proficiency: Advanced
 
 courses:
 - name: Fundamentos de Robótica
