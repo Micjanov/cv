@@ -14,24 +14,24 @@ education:
 - years:
     start: 2013
     end: 2015
-  degree:      MD
-  focus:       Medicine
+  degree:      Grado
+  focus:       Medicina
   campus: Châtenay-Malabry
   institution:  "Université Paris-Sud"
 
 - years:
     start: 2015
     end: 2017
-  degree:      MD
-  focus:       Medicine
+  degree:      Grado
+  focus:       Medicina
   campus: Sevilla
   institution:  "Universidad de Sevilla"
 
 - years:
     start: 2017
     end: present
-  degree:      BE
-  focus:       Computer Engineering
+  degree:      Grado
+  focus:       Ingeniería Informática
   institution:  "Universidad de Granada"
   campus: Ceuta
 
