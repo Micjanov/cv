@@ -213,51 +213,45 @@
   \end{minipage} 
 \end{tabular}
 \lighthrule
-
 %---------- MAIN BODY ----------
+% ABOUT
+\section{about}
+\parbox[t][][t]{\textwidth}{
+    $about$
+}
 %---------- LEFT SIDE ----------
 %\Mybox{
 \begin{minipage}[t]{0.31\textwidth}
   \raggedright
-  \begin{flushleft}
-  % ABOUT
-  \section{about}
-  \parbox[t][][t]{\textwidth}{
-    \lightsmall{
-    \begin{flushleft}
-      $about$
-    \end{flushleft}
-    }
-  }
-%
-  % PROGRAMMING
-  \section{programming}
-  \hlight
-  \begin{sortedlist}
-    $for(programming)$
-    \sortitem{$programming$}
-    $endfor$
-  \end{sortedlist}
+    %\begin{flushleft}
+    % PROGRAMMING
+    \section{programming}
+    \hlight
+    \begin{sortedlist}
+      $for(programming)$
+      \sortitem{$programming$}
+      $endfor$
+    \end{sortedlist}
 
-  % TECHNOLOGIES
-  %
-  \section{technologies}
-  \hlight
-  \begin{sortedlist}
-    $for(technologies)$
-    \sortitem{$technologies$}
-    $endfor$
-  \end{sortedlist}
+    % TECHNOLOGIES
+    %
+    \section{technologies}
+    \hlight
+    \begin{sortedlist}
+      $for(technologies)$
+      \sortitem{$technologies$}
+      $endfor$
+    \end{sortedlist}
 
-  % COURSES
-  %
-  \section{courses}
-  \hlight
-  $for(courses)$
-  \emphasized{$courses.name$} \\
-  \lightfont{\textbf{$courses.institution$}} \\
-  $endfor$
-\end{flushleft}
+    % COURSES
+    %
+    \section{courses}
+    \hlight
+    $for(courses)$
+    \emphasized{$courses.name$} \\
+    \lightfont{\textbf{$courses.institution$}} \\
+    $endfor$
+  %\end{flushleft}
 \end{minipage}%
 %
 %---------- RIGHT SIDE ----------
@@ -324,25 +318,25 @@
     %$endfor$
   %\end{tabular}
 
-% LANGUAGES
-\section{languages}
-% 
-\setlength{\parskip}{1mm}
-\setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
-\setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
+  % LANGUAGES
+  \section{languages}
+  % 
+  \setlength{\parskip}{1mm}
+  \setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
+  \setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
 
-\begin{tabular}{@{}p{\hwide}p{\rightwide}}
-  $for(languages)$
-    \parbox[t][][t]{\hwide}{%
-      \emphasized{$languages.language$}
-      \medskip
-    } & %
-    \parbox[t][][t]{\rightwide}{%
-      \lightbf{$languages.proficiency$}
-      \medskip
-    } \\ %
-  $endfor$
-\end{tabular}
+  \begin{tabular}{@{}p{\hwide}p{\rightwide}}
+    $for(languages)$
+      \parbox[t][][t]{\hwide}{%
+        \emphasized{$languages.language$}
+        \medskip
+      } & %
+      \parbox[t][][t]{\rightwide}{%
+        \lightbf{$languages.proficiency$}
+        \medskip
+      } \\ %
+    $endfor$
+  \end{tabular}
 %
 %\section{publications}
 %\vspace{-0.5em}
