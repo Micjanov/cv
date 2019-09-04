@@ -69,8 +69,8 @@
 \newfontfamily{\hlight}[UprightFont={* Light}]{Cormorant Garamond}
 %\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
 \defaultfontfeatures{
-  Path = /opt/texlive/2019/texmf-dist/fonts/opentype/public/fontawesome/ }
-\usepackage{fontawesome}  % glyphs for contact info
+    Path = /opt/texlive/2019/texmf-dist/fonts/opentype/public/fontawesome5/ }
+\usepackage{fontawesome5}  % glyphs for contact info
 
 % CUSTOM COMMANDS
   \newcommand{\titlerulethick}{{%
@@ -205,6 +205,7 @@
     \begin{tabular}[b]{@{}cl@{}}
       \faEnvelope & \href{mailto:akasroua@gmail.com}{akasroua@gmail.com}\\ %{}
       \faPhone & +34 658591161\\
+      \faGitlab & gitlab.com/akasroua\\
     \end{tabular}
   \end{minipage} & %
 % PHOTO (right)
@@ -214,8 +215,8 @@
 \end{tabular}
 \lighthrule
 %---------- MAIN BODY ----------
-% EXTRACTO
-\section{extracto}
+% ABOUT
+\section{about}
 \parbox[t][][t]{\textwidth}{
     Computer Engineering student ready to step his toes in the job market.
 }
@@ -224,8 +225,8 @@
 \begin{minipage}[t]{0.31\textwidth}
   \raggedright
     %\begin{flushleft}
-    % PROGRAMACIÓN
-    \section{programación}
+    % PROGRAMMING
+    \section{programming}
     \hlight
     \begin{sortedlist}
             \sortitem{C++}
@@ -233,9 +234,9 @@
             \sortitem{Shell}
           \end{sortedlist}
 
-    % SOFTWARE
+    % TECHNOLOGIES
     %
-    \section{software}
+    \section{technologies}
     \hlight
     \begin{sortedlist}
             \sortitem{UNIX-like systems}
@@ -244,9 +245,9 @@
             \sortitem{LEMP - FEMP Stack}
           \end{sortedlist}
 
-    % CURSOS
+    % COURSES
     %
-    \section{cursos}
+    \section{courses}
     \hlight
         \emphasized{Fundamentos de Robótica} \\
     \lightfont{\textbf{Adams Formación}} \\
@@ -261,8 +262,8 @@
 %
 %
 \begin{minipage}[t]{0.64\textwidth}
-  % FORMACIÓN ACADÉMICA
-  \section{formación académica}
+  % EDUCATION
+  \section{education}
   \setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
   \setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
   % 
@@ -317,7 +318,7 @@
     %  %\end{tabular}
 
   % LANGUAGES
-  \section{idiomas}
+  \section{languages}
   % 
   \setlength{\parskip}{1mm}
   \setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
