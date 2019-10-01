@@ -63,6 +63,11 @@ courses:
 - name: Fundamentos de Robótica
   institution: Adams Formación
 
+- name: Programación con Python
+  institution: Universidad de Granada
+
+- name: Programación y distribución de aplicaciones móviles para dispositivos Android e IOS
+  institution: Universidad de Granada
 #experience:
 #- company:     Trinity College, Cambridge
 #  years:
