@@ -39,7 +39,7 @@ education:
 programming:
   - C++
   - Java
-  - Shell
+  - Shell scripting
 
 technologies:
   - UNIX-like systems
@@ -61,13 +61,13 @@ languages:
   proficiency: Advanced
 
 courses:
-- name: Fundamentos de Robótica
+- name: Fundamentals of Robotics
   institution: Adams Formación
 
-- name: Programación con Python
+- name: Python Programming
   institution: Universidad de Granada
 
-- name: Programación y distribución de aplicaciones móviles para dispositivos Android e IOS
+- name: Programming and distribution of mobile apps for Android and iOS devices
   institution: Universidad de Granada
 #experience:
 #- company:     Trinity College, Cambridge

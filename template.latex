@@ -53,9 +53,9 @@
             pageanchor=false]{hyperref}
 \definecolor{linkcolor}{gray}{0.2}
 \hypersetup{
-  pdfauthor={Amin Kasrou Aouam},
-  pdfsubject={Amin Kasrou Aouam - Resume},
-  pdftitle={Amin Kasrou Aouam - Resume},
+  pdfauthor={$name$},
+  pdfsubject={$name$ - Resume},
+  pdftitle={$name$ - Resume},
   urlcolor=linkcolor,
   linkcolor=linkcolor
 }
@@ -69,8 +69,8 @@
 \newfontfamily{\hlight}[UprightFont={* Light}]{Cormorant Garamond}
 %\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
 \defaultfontfeatures{
-    Path = /opt/texlive/2019/texmf-dist/fonts/opentype/public/fontawesome5/ }
-\usepackage{fontawesome5}  % glyphs for contact info
+  Path = /opt/texlive/2019/texmf-dist/fonts/opentype/public/fontawesome5/ }
+\usepackage{fontawesome}  % glyphs for contact info
 
 % CUSTOM COMMANDS
   \newcommand{\titlerulethick}{{%
@@ -128,11 +128,11 @@
   }}
 
   \newcommand{\headline}{
-    {\fontsize{14pt}{17pt}\bfseries\color{dark-gray}}
+    {\fontsize{14pt}{17pt}\bfseries\color{dark-gray}$headline$}
   }
 
   \newcommand{\name}{
-    \raggedright\fontsize{42pt}{42pt}\bfseries\flushleft\color{dark-gray}{Amin Kasrou Aouam}
+    \raggedright\fontsize{42pt}{42pt}\bfseries\flushleft\color{dark-gray}{$name$}
   }
 
   \newcommand{\lighthrule}{
@@ -173,7 +173,7 @@
 %
 %-------------------- BEGIN DOCUMENT ----------------------
 \begin{document}
-%\nocite{}
+%\nocite{$publications$}
 \pagestyle{empty} % non-numbered pages
 \font\fb=''[cmr10]'' %for use with \LaTeX command
 %---------- SPECIFY LENGTHS ----------
@@ -203,9 +203,9 @@
     \renewcommand\arraystretch{1.25}
     \contactinfo
     \begin{tabular}[b]{@{}cl@{}}
-      \faEnvelope & \href{mailto:akasroua@gmail.com}{akasroua@gmail.com}\\ %{}
-      \faPhone & +34 658591161\\
-      \faGitlab & gitlab.com/akasroua\\
+      \faEnvelope & \href{mailto:$email$}{$email$}\\ %{}
+      \faPhone & $phone$\\
+      \faGitlab & gitlab.com/$gitlab$\\
     \end{tabular}
   \end{minipage} & %
 % PHOTO (right)
@@ -215,47 +215,44 @@
 \end{tabular}
 \lighthrule
 %---------- MAIN BODY ----------
-% ABOUT
-\section{about}
+% EXTRACTO
+\section{extracto}
 \parbox[t][][t]{\textwidth}{
-    Computer Engineering student ready to step his toes in the job market.
+    $about$
 }
 %---------- LEFT SIDE ----------
 %\Mybox{
 \begin{minipage}[t]{0.31\textwidth}
   \raggedright
     %\begin{flushleft}
-    % PROGRAMMING
-    \section{programming}
+    % PROGRAMACIÓN
+    \section{programación}
     \hlight
     \begin{sortedlist}
-            \sortitem{C++}
-            \sortitem{Java}
-            \sortitem{Shell scripting}
-          \end{sortedlist}
+      $for(programming)$
+      \sortitem{$programming$}
+      $endfor$
+    \end{sortedlist}
 
-    % TECHNOLOGIES
+    % SOFTWARE
     %
-    \section{technologies}
+    \section{software}
     \hlight
     \begin{sortedlist}
-            \sortitem{UNIX-like systems}
-            \sortitem{\LaTeX}
-            \sortitem{Git}
-            \sortitem{LEMP - FEMP Stack}
-          \end{sortedlist}
+      $for(technologies)$
+      \sortitem{$technologies$}
+      $endfor$
+    \end{sortedlist}
 
-    % COURSES
+    % CURSOS
     %
-    \section{courses}
+    \section{cursos}
     \hlight
-        \emphasized{Fundamentals of Robotics} \\
-    \lightfont{\textbf{Adams Formación}} \\
-        \emphasized{Python Programming} \\
-    \lightfont{\textbf{Universidad de Granada}} \\
-        \emphasized{Programming and distribution of mobile apps for Android and iOS devices} \\
-    \lightfont{\textbf{Universidad de Granada}} \\
-      %\end{flushleft}
+    $for(courses)$
+    \emphasized{$courses.name$} \\
+    \lightfont{\textbf{$courses.institution$}} \\
+    $endfor$
+  %\end{flushleft}
 \end{minipage}%
 %
 %---------- RIGHT SIDE ----------
@@ -266,50 +263,28 @@
 %
 %
 \begin{minipage}[t]{0.64\textwidth}
-  % EDUCATION
-  \section{education}
+  % FORMACIÓN ACADÉMICA
+  \section{formación académica}
   \setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
   \setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
   % 
   \setlength{\parskip}{1mm}
   \begin{tabular}{@{}p{\hwide}p{\rightwide}}
-          \parbox[t][][t]{\hwide}{%
-        \lightfont{2013 \textendash{} 2015} \\
+    $for(education)$
+      \parbox[t][][t]{\hwide}{%
+        \lightfont{$education.years.start$ \textendash{} $education.years.end$} \\
         \smallskip
-        \emphasized{MD} \\
+        \emphasized{$education.degree$} \\
         \smallskip
-        \emphasized{Medicine} \\
+        \emphasized{$education.focus$} \\
       } & %
       \parbox[t][][t]{\rightwide}{%
-        \lightfont{\textbf{Université Paris-Sud} \\
-          \emph{Châtenay-Malabry}} \\ %
+        \lightfont{\textbf{$education.institution$} \\
+          \emph{$education.campus$}} \\ %
         \bigskip %
       } \\
-          \parbox[t][][t]{\hwide}{%
-        \lightfont{2015 \textendash{} 2017} \\
-        \smallskip
-        \emphasized{MD} \\
-        \smallskip
-        \emphasized{Medicine} \\
-      } & %
-      \parbox[t][][t]{\rightwide}{%
-        \lightfont{\textbf{Universidad de Sevilla} \\
-          \emph{Sevilla}} \\ %
-        \bigskip %
-      } \\
-          \parbox[t][][t]{\hwide}{%
-        \lightfont{2017 \textendash{} present} \\
-        \smallskip
-        \emphasized{BE} \\
-        \smallskip
-        \emphasized{Computer Engineering} \\
-      } & %
-      \parbox[t][][t]{\rightwide}{%
-        \lightfont{\textbf{Universidad de Granada} \\
-          \emph{Ceuta}} \\ %
-        \bigskip %
-      } \\
-      \end{tabular}
+    $endfor$
+  \end{tabular}
   % 
   %\section{experience}
   %%
@@ -319,49 +294,50 @@
   %%  POSITIONS
   %\begin{tabular}{@{}p{\hwide}p{\hwideright}}
     %\arrayrulecolor{light-gray}
-    %  %\end{tabular}
+    %$for(experience)$
+      %\parbox[t][][t]{\hwide}{%
+          %\raggedright
+          %\company{$experience.company$}\\
+          %\vspace{\buffer}
+          %\lightfont{%
+          %$experience.years.start$ \textendash{} $experience.years.end$\\
+          %$if(experience.location)$
+            %$experience.location$\\
+          %$endif$
+          %\vspace{\buffer}}
+          %$if(experience.group)$
+            %\lightsmall{\emph{$experience.group$}}%
+          %$endif$
+        %} & %
+      %\parbox[t][][t]{\hwideright}{%
+          %\raggedright
+          %\position{$experience.position$}\\
+          %\vspace{\buffer}
+          %\lightsmall{$experience.description$}
+        %}\\
+        %\spacerule
+    %$endfor$
+  %\end{tabular}
 
   % LANGUAGES
-  \section{languages}
+  \section{idiomas}
   % 
   \setlength{\parskip}{1mm}
   \setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
   \setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
 
   \begin{tabular}{@{}p{\hwide}p{\rightwide}}
-          \parbox[t][][t]{\hwide}{%
-        \emphasized{Spanish}
+    $for(languages)$
+      \parbox[t][][t]{\hwide}{%
+        \emphasized{$languages.language$}
         \medskip
       } & %
       \parbox[t][][t]{\rightwide}{%
-        \lightbf{Native}
+        \lightbf{$languages.proficiency$}
         \medskip
       } \\ %
-          \parbox[t][][t]{\hwide}{%
-        \emphasized{French}
-        \medskip
-      } & %
-      \parbox[t][][t]{\rightwide}{%
-        \lightbf{Native}
-        \medskip
-      } \\ %
-          \parbox[t][][t]{\hwide}{%
-        \emphasized{Darija (Moroccan dialect)}
-        \medskip
-      } & %
-      \parbox[t][][t]{\rightwide}{%
-        \lightbf{Native}
-        \medskip
-      } \\ %
-          \parbox[t][][t]{\hwide}{%
-        \emphasized{English}
-        \medskip
-      } & %
-      \parbox[t][][t]{\rightwide}{%
-        \lightbf{Advanced}
-        \medskip
-      } \\ %
-      \end{tabular}
+    $endfor$
+  \end{tabular}
 %
 %\section{publications}
 %\vspace{-0.5em}
