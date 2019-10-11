@@ -205,6 +205,7 @@
     \begin{tabular}[b]{@{}cl@{}}
       \faEnvelope & \href{mailto:$email$}{$email$}\\ %{}
       \faPhone & $phone$\\
+      \faGitlab & gitlab.com/$gitlab$\\
     \end{tabular}
   \end{minipage} & %
 % PHOTO (right)
