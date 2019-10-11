@@ -1,0 +1,79 @@
+---
+# Personal details
+name:          Amin Kasrou Aouam
+phone:         +34 658591161
+email:         akasroua@gmail.com
+gitlab:        akasroua
+#publications:  '\*'
+
+#headline:      |
+
+about:         |
+  Estudiante de Ingeniería Informática, con motivación para entrar en el mundo laboral con el fin de familiarizarme con las mecánicas de éste.
+
+education:
+- years:
+    start: 2013
+    end: 2015
+  degree:      Grado
+  focus:       Medicina
+  campus: Châtenay-Malabry
+  institution:  "Université Paris-Sud"
+
+- years:
+    start: 2015
+    end: 2017
+  degree:      Grado
+  focus:       Medicina
+  campus: Sevilla
+  institution:  "Universidad de Sevilla"
+
+- years:
+    start: 2017
+    end: presente
+  degree:      Grado
+  focus:       Ingeniería Informática
+  institution:  "Universidad de Granada"
+  campus: Ceuta
+
+programming:
+  - C++
+  - Java
+  - Shell
+
+technologies:
+  - Sistemas UNIX
+  - \LaTeX
+  - Git
+  - LEMP - FEMP Stack
+
+languages:
+- language: Español
+  proficiency: Nativo
+
+- language: Francés
+  proficiency: Nativo
+
+- language: Darija
+  proficiency: Nativo
+
+- language: Inglés
+  proficiency: Avanzado
+
+courses:
+- name: Fundamentos de Robótica
+  institution: Adams Formación
+
+- name: Programación con Python
+  institution: Universidad de Granada
+
+- name: Programación y distribución de aplicaciones móviles para dispositivos Android e IOS
+  institution: Universidad de Granada
+#experience:
+#- company:     Trinity College, Cambridge
+#  years:
+#    start:     '1669'
+#    end:       '1702'
+#  position:    Lucasian Professor of Mathematics
+#  description: "Mainly mathematical sciences, but also the study of alchemy and biblical chronology. I generalized the binomial theorem to allow real exponents other than nonnegative integers. Also devised a method for finding successively better approximations to the roots (or zeroes) of a real-valued function, it's called ``Newton's method''"
+---
