@@ -69,8 +69,8 @@
 \newfontfamily{\hlight}[UprightFont={* Light}]{Cormorant Garamond}
 %\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
 \defaultfontfeatures{
-  Path = /opt/texlive/2019/texmf-dist/fonts/opentype/public/fontawesome/ }
-\usepackage{fontawesome}  % glyphs for contact info
+    Path = /opt/texlive/2019/texmf-dist/fonts/opentype/public/fontawesome5/ }
+\usepackage{fontawesome5}  % glyphs for contact info
 
 % CUSTOM COMMANDS
   \newcommand{\titlerulethick}{{%
