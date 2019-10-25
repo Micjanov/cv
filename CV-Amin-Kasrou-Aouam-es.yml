@@ -13,12 +13,12 @@ about:         |
 
 education:
 - years:
-    start: 2013
-    end: 2015
+    start: 2017
+    end: presente
   degree:      Grado
-  focus:       Medicina
-  campus: Châtenay-Malabry
-  institution:  "Université Paris-Sud"
+  focus:       Ingeniería Informática
+  institution:  "Universidad de Granada"
+  campus: Ceuta
 
 - years:
     start: 2015
@@ -28,13 +28,14 @@ education:
   campus: Sevilla
   institution:  "Universidad de Sevilla"
 
+
 - years:
-    start: 2017
-    end: presente
+    start: 2013
+    end: 2015
   degree:      Grado
-  focus:       Ingeniería Informática
-  institution:  "Universidad de Granada"
-  campus: Ceuta
+  focus:       Medicina
+  campus: Châtenay-Malabry
+  institution:  "Université Paris-Sud"
 
 programming:
   - C++
