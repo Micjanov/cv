@@ -49,6 +49,9 @@ technologies:
   - LEMP - FEMP Stack
 
 languages:
+- language: Inglés
+  proficiency: Fluido
+
 - language: Español
   proficiency: Nativo
 
@@ -58,8 +61,6 @@ languages:
 - language: Darija
   proficiency: Nativo
 
-- language: Inglés
-  proficiency: Avanzado
 
 courses:
 - name: Fundamentos de Robótica
