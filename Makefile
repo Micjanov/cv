@@ -17,7 +17,7 @@ always_latexmk := true
 xelatex := true
 
 # list of markdown files that are not to be made into PDFs
-EXCLUDE := README.md
+EXCLUDE := README.org
 
 # Extra options to pandoc (e.g. "-H mypreamble.tex")
 PANDOC_OPTIONS :=
@@ -26,18 +26,20 @@ PANDOC_OPTIONS :=
 
 # Normally this does not need to be changed:
 # works if the template is local or in ~/.pandoc/templates
-PANDOC_TMPL := template-en.latex
+PANDOC_TMPL := Assets/template-en.latex
 
 ## ---- subdirectories (normally, no need to change) ----
 
 # source of YAML spec files
-yml_dir := .
+#yml_dir := .
 
 # temporary file subdirectory; will be removed after every latex run
 temp_dir := tmp
 
-# name of output directory for .tex and .pdf files
-out_dir := out
+# name of output directory for .pdf files
+out_dir := Output
+# name of input directory for .yml and .latex files
+in_dir := Input
 
 ## ---- commands ----
 
@@ -46,14 +48,15 @@ out_dir := out
 PANDOC := pandoc --template $(PANDOC_TMPL) $(PANDOC_OPTIONS)
 
 LATEXMK := latexmk $(if $(xelatex),-xelatex,-pdflatex="pdflatex %O %S") \
-    $(if $(latex_quiet),-silent,-verbose)
+	$(if $(latex_quiet),-silent,-verbose)
 
 ## ---- build rules ----
 
-ymls := $(filter-out $(addprefix $(yml_dir)/,$(EXCLUDE)),$(wildcard $(yml_dir)/*.yml))
+ymls := $(filter-out $(addprefix $(in_dir)/,$(EXCLUDE)),$(wildcard $(in_dir)/*.yml))
+pdfs_path := $(filter-out $(addprefix $(out_dir)/,$(EXCLUDE)),$(wildcard $(out_dir)/*.pdf))
 texs := $(patsubst %.yml,%.tex,$(ymls))
 pdfs := $(patsubst %.yml,%.pdf,$(ymls))
-bibs := $(wildcard $(yml_dir)/*.bib)
+bibs := $(wildcard $(in_dir)/*.bib)
 
 $(texs): %.tex: %.yml $(bibs) $(PANDOC_TMPL)
 	$(PANDOC) -o $@ $<	# pandoc template > .tex
@@ -70,6 +73,6 @@ all: $(pdfs) clean
 
 # clean up everything except final pdfs
 clean:
-	latexmk -c
+	latexmk -c .
 
 .DEFAULT_GOAL := all

@@ -210,13 +210,13 @@
   \end{minipage} & %
 % PHOTO (right)
   \begin{minipage}[b]{\rightwide}
-    \includegraphics[width=7em]{photo.png}
+    \includegraphics[width=7em]{Assets/photo.png}
   \end{minipage} 
 \end{tabular}
 \lighthrule
 %---------- MAIN BODY ----------
-% EXTRACTO
-\section{extracto}
+% ABOUT
+\section{about}
 \parbox[t][][t]{\textwidth}{
     $about$
 }
@@ -225,8 +225,8 @@
 \begin{minipage}[t]{0.31\textwidth}
   \raggedright
     %\begin{flushleft}
-    % PROGRAMACIÓN
-    \section{programación}
+    % PROGRAMMING
+    \section{programming}
     \hlight
     \begin{sortedlist}
       $for(programming)$
@@ -234,9 +234,9 @@
       $endfor$
     \end{sortedlist}
 
-    % SOFTWARE
+    % TECHNOLOGIES
     %
-    \section{software}
+    \section{technologies}
     \hlight
     \begin{sortedlist}
       $for(technologies)$
@@ -244,9 +244,9 @@
       $endfor$
     \end{sortedlist}
 
-    % CURSOS
+    % COURSES
     %
-    \section{cursos}
+    \section{courses}
     \hlight
     $for(courses)$
     \emphasized{$courses.name$} \\
@@ -263,8 +263,8 @@
 %
 %
 \begin{minipage}[t]{0.64\textwidth}
-  % FORMACIÓN ACADÉMICA
-  \section{formación académica}
+  % EDUCATION
+  \section{education}
   \setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
   \setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
   % 
@@ -320,7 +320,7 @@
   %\end{tabular}
 
   % LANGUAGES
-  \section{idiomas}
+  \section{languages}
   % 
   \setlength{\parskip}{1mm}
   \setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
