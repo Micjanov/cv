@@ -3,20 +3,21 @@
 Curriculum vitae template that uses LaTeX for rendering, via Pandoc. If
 you want to adapt it to your needs:
 
-- Sections and layout: .latex
-- Details: .yml
+- Sections and layout: Input/%.latex
+- Details: Input/%.yml
 
 ** Requirements
-   - Pandoc
-   - GNU Make
-   - LaTeX (only tested with TeX Live)
+
+- Pandoc
+- GNU Make
+- LaTeX (only tested with TeX Live)
 
 ** Usage
 
-  Compile the documents using make
+Compile the documents using make
 
 #+BEGIN_SRC sh
   make
 #+END_SRC
 
-  The pdf documents will appear in the same folder.
+The pdf documents will appear in the *Output* folder.
