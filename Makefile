@@ -26,7 +26,7 @@ PANDOC_OPTIONS :=
 
 # Normally this does not need to be changed:
 # works if the template is local or in ~/.pandoc/templates
-PANDOC_TMPL := Assets/template-en.latex
+PANDOC_TMPL := Assets/template.tex
 
 ## ---- subdirectories (normally, no need to change) ----
 
