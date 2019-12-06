@@ -1,16 +1,22 @@
 * Curriculum vitae
 
-Curriculum vitae template that uses LaTeX for rendering, via Pandoc. If
-you want to adapt it to your needs:
+Curriculum vitae template that uses LaTeX for rendering, via Pandoc.
 
-- Sections and layout: Input/%.latex
-- Details: Input/%.yml
 
 ** Requirements
 
 - Pandoc
 - GNU Make
 - LaTeX (only tested with TeX Live)
+
+** Configuration
+
+- Sections and layout: Assets/template.latex
+- Details: Input/%.yml
+
+The /lang/ variable allows you to have different section names, if you want a
+bilingual CV.
+
 
 ** Usage
 
