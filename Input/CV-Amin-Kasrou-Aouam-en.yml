@@ -7,8 +7,6 @@ gitlab:        akasroua
 lang:          en
 #publications:  '\*'
 
-#headline:      |
-
 about:         |
   Computer Engineering student ready to step his toes in the job market.
 
@@ -38,16 +36,25 @@ education:
   institution:  "Université Paris-Sud"
 
 programming:
-  - C++
-  - Java
-  - Python
-  - Shell scripting
+- language: C++
+  proficiency: Good 
+
+- language: Python
+  proficiency: Good 
+
+- language: Java
+  proficiency: Basic 
+
+- language: Nix
+  proficiency: Medium 
 
 technologies:
-  - UNIX-like systems
+  - Linux/FreeBSD
   - \LaTeX
   - Git
-  - LEMP - FEMP Stack
+  - LEMP Stack
+  - REST APIs
+  - SQL
 
 languages:
 - language: English
@@ -57,9 +64,6 @@ languages:
   proficiency: Native
 
 - language: French
-  proficiency: Native
-
-- language: Darija (Moroccan dialect)
   proficiency: Native
 
 courses:
@@ -74,11 +78,18 @@ courses:
 
 - name: Arduino
   institution: Universidad de Granada
-#experience:
-#- company:     Trinity College, Cambridge
-#  years:
-#    start:     '1669'
-#    end:       '1702'
-#  position:    Lucasian Professor of Mathematics
-#  description: "Mainly mathematical sciences, but also the study of alchemy and biblical chronology. I generalized the binomial theorem to allow real exponents other than nonnegative integers. Also devised a method for finding successively better approximations to the roots (or zeroes) of a real-valued function, it's called ``Newton's method''"
+ 
+experience:
+- company:     Odyfo
+  years:
+    start:     'April 2020'
+    end:       'present'
+  position:    Internship
+  description: "REST API development in Python, database optimization and migration to AWS Lambda"
+- company:     JITKey
+  years:
+    start:     'February 2020'
+    end:       'March 2020'
+  position:    Internship
+  description: "Support Manager at a startup in Spain. Cut short due to the COVID-19 epidemic"
 ---

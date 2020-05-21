@@ -7,10 +7,8 @@ gitlab:        akasroua
 lang:          es
 #publications:  '\*'
 
-#headline:      |
-
 about:         |
-  Estudiante de Ingeniería Informática, con motivación para entrar en el mundo laboral con el fin de familiarizarme con las mecánicas de éste.
+  Estudiante de Ingeniería Informática, con motivación para entrar en el mundo laboral.
 
 education:
 - years:
@@ -39,16 +37,25 @@ education:
   institution:  "Université Paris-Sud"
 
 programming:
-  - C++
-  - Java
-  - Python
-  - Shell
+- language: C++
+  proficiency: Alto
+
+- language: Python
+  proficiency: Alto
+
+- language: Java
+  proficiency: Básico 
+
+- language: Nix
+  proficiency: Medio 
 
 technologies:
-  - Sistemas UNIX
+  - Linux/FreeBSD
   - \LaTeX
   - Git
-  - LEMP - FEMP Stack
+  - LEMP Stack
+  - APIs REST
+  - SQL
 
 languages:
 - language: Inglés
@@ -59,10 +66,6 @@ languages:
 
 - language: Francés
   proficiency: Nativo
-
-- language: Darija
-  proficiency: Nativo
-
 
 courses:
 - name: Fundamentos de Robótica
@@ -76,11 +79,18 @@ courses:
 
 - name: Arduino
   institution: Universidad de Granada
-#experience:
-#- company:     Trinity College, Cambridge
-#  years:
-#    start:     '1669'
-#    end:       '1702'
-#  position:    Lucasian Professor of Mathematics
-#  description: "Mainly mathematical sciences, but also the study of alchemy and biblical chronology. I generalized the binomial theorem to allow real exponents other than nonnegative integers. Also devised a method for finding successively better approximations to the roots (or zeroes) of a real-valued function, it's called ``Newton's method''"
+ 
+experience:
+- company:     Odyfo
+  years:
+    start:     'Abril 2020'
+    end:       'presente'
+  position:    Prácticas
+  description: "Desarrollo de una API REST, optimización de base de datos y migración a AWS Lambda"
+- company:     JITKey
+  years:
+    start:     'Febrero 2020'
+    end:       'Marzo 2020'
+  position:    Prácticas
+  description: "Responsable de Soporte en una startup española. Suspendidas debido al COVID-19"
 ---

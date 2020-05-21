@@ -9,7 +9,7 @@
 \usepackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[left=1.3cm,
-            top=1.2cm,
+            top=0.9cm,
             right=1.3cm,
             bottom=1.2cm,
             nohead,
@@ -68,16 +68,16 @@
 \newfontfamily{\hlight}[UprightFont={* Light}]{Cormorant Garamond}
 %\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
 \defaultfontfeatures{
-    Path = /opt/texlive/2019/texmf-dist/fonts/opentype/public/fontawesome5/ }
+    Path = /nix/store/nl6mv0aymmla9c57bdpxg4yzf888qjlj-emacs-all-the-icons-fonts-3.2.0/share/fonts/all-the-icons/fontawesome.ttf }
 \usepackage{fontawesome5}  % glyphs for contact info
 
 % CUSTOM COMMANDS
   \newcommand{\titlerulethick}{{%
-    {\color{dark-gray} \titlerule[0.7mm] }%
+    {\color{dark-gray} \titlerule[0.5mm] }%
   }}
 
   % old section title format
-  \titleformat{\section}{\fontsize{28pt}{40pt}\color{dark-gray}\normalfont}{}{0mm}{}[\titlerulethick]
+  \titleformat{\section}{\fontsize{28pt}{38pt}\color{dark-gray}\normalfont}{}{0mm}{}[\titlerulethick]
   %\titlespacing{\section}{0pt}{3pt}{3pt}
 
   \newcommand{\namefont}[1]{{%
@@ -115,15 +115,15 @@
   }}
 
   \newcommand{\emphasized}[1]{{%
-    {\fontsize{14pt}{18pt}\textbf{#1}}
+    {\fontsize{12pt}{14pt}\textbf{#1}}
   }}
 
   \newcommand{\position}[1]{{%
-    {\fontsize{14pt}{18pt} \hlight{#1}}
+    {\fontsize{12pt}{14pt} \hlight{#1}}
   }}
 
   \newcommand{\company}[1]{{%
-    {\fontsize{14pt}{18pt} \textbf{#1}}
+    {\fontsize{12pt}{14pt} \textbf{#1}}
   }}
 
   \newcommand{\headline}{
@@ -131,15 +131,11 @@
   }
 
   \newcommand{\name}{
-    \raggedright\fontsize{42pt}{42pt}\bfseries\flushleft\color{dark-gray}{$name$}
+    \raggedright\fontsize{38pt}{38pt}\bfseries\flushleft\color{dark-gray}{$name$}
   }
 
   \newcommand{\lighthrule}{
-    {\color{light-gray}\par\rule[0mm]{\hsize}{0.5mm}\par\vspace{0.5em}}
-  }
-
-  \newcommand\Mybox[1]{%
-    \setlength\fboxsep{0pt}\fcolorbox{red}{white}{#1}
+    {\color{light-gray}\par\rule[0mm]{\hsize}{0.5mm}\par\vspace{0.0em}}
   }
 
 % hack to remove bibliography numbering
@@ -162,14 +158,6 @@
       \endlist}
 \makeatother
 %
-%
-%
-%
-%
-%
-%
-%
-%
 %-------------------- BEGIN DOCUMENT ----------------------
 \begin{document}
 %\nocite{$publications$}
@@ -191,12 +179,6 @@
   \begin{minipage}[b]{\leftwide}
     \name
   \end{minipage} & %
-  %
-  % HEADLINE (middle)
-  %\begin{minipage}[b]{\centerwide}
-    %\parbox[b][][b]{4.5cm}{\raggedright\headline}
-  %\end{minipage} & %
-  %
   % CONTACT INFO (middle)
   \begin{minipage}[b]{\centerwide}
     \renewcommand\arraystretch{1.25}
@@ -215,6 +197,7 @@
 \lighthrule
 %---------- MAIN BODY ----------
 % ABOUT
+\vspace{-1.6em}
 \ifthenelse{\equal{$lang$}{en}}
     {\section{about}}
     {\section{extracto}}%
@@ -222,32 +205,30 @@
     $about$
 }
 %---------- LEFT SIDE ----------
-%\Mybox{
 \begin{minipage}[t]{0.31\textwidth}
   \raggedright
-    %\begin{flushleft}
     % PROGRAMMING
     \ifthenelse{\equal{$lang$}{en}}
         {\section{programming}}
         {\section{programación}}%
     \hlight
-    \begin{sortedlist}
+    \begin{itemize}[]
       $for(programming)$
-      \sortitem{$programming$}
+      \item\emphasized{$programming.language$}
       $endfor$
-    \end{sortedlist}
+    \end{itemize}
 
     % TECHNOLOGIES
     %
     \ifthenelse{\equal{$lang$}{en}}
-        {\section{technologies}}
-        {\section{software}}%
+        {\section{technical skills}}
+        {\section{tecnologías}}%
     \hlight
-    \begin{sortedlist}
+    \begin{itemize}[]
       $for(technologies)$
-      \sortitem{$technologies$}
+      \item{$technologies$}
       $endfor$
-    \end{sortedlist}
+    \end{itemize}
 
     % COURSES
     %
@@ -259,7 +240,6 @@
     \emphasized{$courses.name$} \\
     \lightfont{\textbf{$courses.institution$}} \\
     $endfor$
-  %\end{flushleft}
 \end{minipage}%
 %
 %---------- RIGHT SIDE ----------
@@ -268,8 +248,40 @@
 \newlength{\buffer}
 \setlength{\buffer}{4pt plus 1pt minus 1pt}
 %
-%
 \begin{minipage}[t]{0.64\textwidth}
+  % EXPERIENCE
+  \ifthenelse{\equal{$lang$}{en}}
+      {\section{experience}}
+      {\section{experiencia laboral}}%
+  \setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
+  \setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
+  %
+  \begin{tabular}{@{}p{\hwide}p{\hwideright}}
+    \arrayrulecolor{light-gray}
+    $for(experience)$
+      \parbox[t][][t]{\hwide}{%
+          \raggedright
+          \company{$experience.company$}\\
+          \vspace{\buffer}
+          \lightfont{%
+          $experience.years.start$ \textendash{} $experience.years.end$\\
+          $if(experience.location)$
+            $experience.location$\\
+          $endif$
+          \vspace{\buffer}}
+          $if(experience.group)$
+            \lightsmall{\emph{$experience.group$}}%
+          $endif$
+        } & %
+      \parbox[t][][t]{\hwideright}{%
+          \raggedright
+          \position{$experience.position$}\\
+          \vspace{\buffer}
+          \lightsmall{$experience.description$}
+        }\\
+        \spacerule
+    $endfor$
+  \end{tabular}
   % EDUCATION
   \ifthenelse{\equal{$lang$}{en}}
       {\section{education}}
@@ -278,6 +290,7 @@
   \setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
   % 
   \setlength{\parskip}{1mm}
+  \vspace{-0.5em}
   \begin{tabular}{@{}p{\hwide}p{\rightwide}}
     $for(education)$
       \parbox[t][][t]{\hwide}{%
@@ -290,43 +303,12 @@
       \parbox[t][][t]{\rightwide}{%
         \lightfont{\textbf{$education.institution$} \\
           \emph{$education.campus$}} \\ %
-        \bigskip %
+        \medskip %
       } \\
     $endfor$
   \end{tabular}
+  \vspace{-0.8em}
   % 
-  %\section{experience}
-  %%
-  %\setlength{\hwide}{\dimexpr.5\hsize-4\tabcolsep}
-  %\setlength{\hwideright}{\dimexpr\hwide+5\tabcolsep}
-  %%
-  %%  POSITIONS
-  %\begin{tabular}{@{}p{\hwide}p{\hwideright}}
-    %\arrayrulecolor{light-gray}
-    %$for(experience)$
-      %\parbox[t][][t]{\hwide}{%
-          %\raggedright
-          %\company{$experience.company$}\\
-          %\vspace{\buffer}
-          %\lightfont{%
-          %$experience.years.start$ \textendash{} $experience.years.end$\\
-          %$if(experience.location)$
-            %$experience.location$\\
-          %$endif$
-          %\vspace{\buffer}}
-          %$if(experience.group)$
-            %\lightsmall{\emph{$experience.group$}}%
-          %$endif$
-        %} & %
-      %\parbox[t][][t]{\hwideright}{%
-          %\raggedright
-          %\position{$experience.position$}\\
-          %\vspace{\buffer}
-          %\lightsmall{$experience.description$}
-        %}\\
-        %\spacerule
-    %$endfor$
-  %\end{tabular}
 
   % LANGUAGES
   \ifthenelse{\equal{$lang$}{en}}
