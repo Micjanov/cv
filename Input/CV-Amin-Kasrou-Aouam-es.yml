@@ -38,16 +38,16 @@ education:
 
 programming:
 - language: C++
-  proficiency: Alto
+  proficiency: Avanzado
 
 - language: Python
-  proficiency: Alto
-
-- language: Java
-  proficiency: Básico 
+  proficiency: Avanzado
 
 - language: Nix
-  proficiency: Medio 
+  proficiency: Intermedio
+
+- language: Java
+  proficiency: Básico
 
 technologies:
   - Linux/FreeBSD

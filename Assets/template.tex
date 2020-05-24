@@ -1,6 +1,6 @@
 % !TEX encoding = UTF-8 Unicode
 
-\documentclass[letterpaper,12pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 %A Few Useful Packages
 %\usepackage{marvosym}
@@ -205,18 +205,29 @@
     $about$
 }
 %---------- LEFT SIDE ----------
+\newlength{\hwide}
 \begin{minipage}[t]{0.31\textwidth}
   \raggedright
     % PROGRAMMING
     \ifthenelse{\equal{$lang$}{en}}
         {\section{programming}}
         {\section{programación}}%
+    \setlength{\parskip}{1mm}
+    \setlength{\hwide}{\dimexpr.5\hsize-3\tabcolsep}
+    %
     \hlight
-    \begin{itemize}[]
+    \begin{tabular}{@{}p{\hwide}p{\centerwide}}
       $for(programming)$
-      \item\emphasized{$programming.language$}
+        \parbox[t][][t]{\hwide}{%
+          \emphasized{$programming.language$}
+          \medskip
+        } & %
+        \parbox[t][][t]{\centerwide}{%
+          \lightbf{$programming.proficiency$}
+          \medskip
+        } \\ %
       $endfor$
-    \end{itemize}
+    \end{tabular}
 
     % TECHNOLOGIES
     %
@@ -243,7 +254,6 @@
 \end{minipage}%
 %
 %---------- RIGHT SIDE ----------
-\newlength{\hwide}
 \newlength{\hwideright}
 \newlength{\buffer}
 \setlength{\buffer}{4pt plus 1pt minus 1pt}

@@ -42,11 +42,11 @@ programming:
 - language: Python
   proficiency: Good 
 
+- language: Nix
+  proficiency: Intermediate 
+
 - language: Java
   proficiency: Basic 
-
-- language: Nix
-  proficiency: Medium 
 
 technologies:
   - Linux/FreeBSD
