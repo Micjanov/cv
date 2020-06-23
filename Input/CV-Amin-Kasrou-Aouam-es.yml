@@ -49,6 +49,9 @@ programming:
 - language: Java
   proficiency: Básico
 
+- language: PHP
+  proficiency: Básico
+
 technologies:
   - Linux/FreeBSD
   - \LaTeX
