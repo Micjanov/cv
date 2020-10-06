@@ -8,7 +8,9 @@ lang:          es
 #publications:  '\*'
 
 about:         |
-  Estudiante de Ingeniería Informática, con motivación para entrar en el mundo laboral.
+  Estudiante de Ingeniería Informática, interesado en las áreas de inteligencia artificial, bioinformática, infraestructura como código (IaC), sistemas distribuidos e inmutables.
+
+  Busco una oportunidad laboral instructiva, con un énfasis en el trabajo en grupo y la colaboración.
 
 education:
 - years:
@@ -37,11 +39,11 @@ education:
   institution:  "Université Paris-Sud"
 
 programming:
-- language: C++
-  proficiency: Avanzado
-
 - language: Python
   proficiency: Avanzado
+
+- language: C++
+  proficiency: Intermedio
 
 - language: Nix
   proficiency: Intermedio
@@ -89,7 +91,7 @@ experience:
     start:     'Abril 2020'
     end:       'presente'
   position:    Prácticas
-  description: "Desarrollo de una API REST, optimización de base de datos y migración a AWS Lambda"
+  description: "Desarrollo de una API REST, migración de base de datos y despliegue a AWS"
 - company:     JITKey
   years:
     start:     'Febrero 2020'
