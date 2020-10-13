@@ -86,12 +86,6 @@ courses:
   institution: Universidad de Granada
  
 experience:
-- company:     Odyfo
-  years:
-    start:     'Abril 2020'
-    end:       'presente'
-  position:    Prácticas
-  description: "Desarrollo de una API REST, migración de base de datos y despliegue a AWS"
 - company:     JITKey
   years:
     start:     'Febrero 2020'

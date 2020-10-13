@@ -85,12 +85,6 @@ courses:
   institution: Universidad de Granada
  
 experience:
-- company:     Odyfo
-  years:
-    start:     'April 2020'
-    end:       'present'
-  position:    Internship
-  description: "REST API development in Python, database migration and deployment to AWS"
 - company:     JITKey
   years:
     start:     'February 2020'
