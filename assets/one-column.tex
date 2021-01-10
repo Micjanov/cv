@@ -1,0 +1,121 @@
+\documentclass[12pt,letterpaper]{moderncv}
+
+%% Documentation for this can be found here:
+%% http://ctan.math.washington.edu/tex-archive/macros/latex/contrib/moderncv/examples/template.tex
+
+\usepackage{enumitem,fontspec}
+
+%% ModernCV themes
+\moderncvstyle{fancy}
+\moderncvcolor{blue}
+%\moderncvcolor{grey}
+\nopagenumbers{}
+
+%\renewcommand{\familydefault}{\rmdefault}
+\usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.75,right=.45in,left=.45in,top=.4in,bottom=.4in]{geometry}
+
+%% Personal data
+\firstname{Ashton}
+\familyname{Wiersdorf}
+\title{Computer Scientist, PL Padawan, and Emacs Wizard} 
+%% \address{867 Wymount Terrace}{Provo, UT 84604}
+%% \mobile{+1~(385)~250--8242} 
+\email{\mbox{ashton.wiersdorf@pobox.com}}
+\homepage{\mbox{https://lambdaland.org/}}
+\social[github]{ashton314}
+\social[linkedin]{ashton-wiersdorf}
+%% \photo[64pt][0.4pt]{spock}
+%\quote{A native to the command line---I'm more at home with a keyboard than a mouse. I prefer automating most everything, so I can focus on interesting problems. When I'm not programming or doing homework, I enjoy reading, singing, and swimming.}
+
+\setlength{\hintscolumnwidth}{1.7in}
+
+\newenvironment{tightitems}
+               {\noindent\ignorespaces\vspace{-15pt}
+                 \begin{itemize}[topsep=0pt,partopsep=0pt,itemsep=0pt,parsep=0pt]}
+               {\end{itemize}\vspace{-10pt}}
+\newenvironment{lesstightitems}
+               {\noindent\ignorespaces
+                 \begin{itemize}[topsep=0pt,partopsep=0pt,itemsep=0pt,parsep=0pt]}
+               {\end{itemize}\vspace{-10pt}}
+
+\begin{document}
+%% \setmainfont{Hoefler Text}
+%% \setmainfont{Baskerville}
+%% \setmainfont{CMU Serif}
+\setmainfont[
+  BoldFont = * Bold
+]{Cormorant Garamond}
+\makecvtitle
+
+\section{Education}
+\cventry{2017--2021}{Bachelor of Science, Computer Science}{Brigham Young University}{Provo}{}{
+\begin{tightitems}
+  \item Minor: Mathematics
+  \item 3.76 GPA
+  \item Academic scholarship for half tuition
+  \item Sang as member of the largest collegiate male choir in the US before world-wide audiences
+\end{tightitems}}
+%% \cventry{2010--2014}{Graduate}{Karl G. Maeser Preparatory Academy}{Lindon}{High Honors}{
+%%   \begin{tightitems}
+%%   \item 2014 State Sterling Scholar runner-up in the Computer Technology division
+%%   \item Won the 2013 Utah State Science Fair with a Scheme interpreter written in Perl (on GitHub)
+%%   \item 34/36 ACT score
+%% \end{tightitems}}
+
+\section{Skill Set}
+\cvitem{Languages}{Elixir, Racket, Clojure, Perl, Rust, Go, Julia, Swift, Coq, Prolog}
+%% \cvitem{Advanced Languages}{Elixir, Perl, Clojure, Scheme, Racket, JavaScript}
+%% \cvitem{Intermediate Languages}{Rust, Go, Julia, Swift, Prolog, C++, Java}
+\cvitem{Frameworks}{Phoenix and Phoenix LiveView (Elixir), Ring (Clojure), Mojolicious (Perl)}
+\cvitem{Development Tools}{Emacs, GNU Make, Git, Docker, Travis CI, Bash, GitHub, GitLab}
+\cvitem{Platforms}{macOS, Linux, FreeBSD, iOS}
+
+\section{Work History}
+\cventry{January 2020--Present}{Software Engineer Intern}{TazWorks}{Draper, UT}{}{\begin{tightitems}
+  \item Eliminated daily-occurring bugs in the company's core product
+  \end{tightitems}}
+\cventry{September 2019--December 2019}{Intern}{20 Billion Neurons GmbH}{Berlin, Germany}{}{\begin{tightitems}
+  \item Adapted a Golang project to be more robust under unstable network conditions
+  \item Dockerized AI application; built Travis CI script to automatically build and push images
+  \end{tightitems}}
+\cventry{April 2019--August 2019}{Software Engineer Intern}{TazWorks}{Draper, UT}{}{\begin{tightitems}
+    \item Developed a DSL to replace several microservices with simpler in-line scripts
+  \end{tightitems}}
+\cventry{December 2016--April 2019}{Programmer}{Student Life Technology at BYU}{Provo, UT}{}{\begin{tightitems}
+  \item Stabilized decades-old legacy systems and introduced automated build strategies
+  \item Introduced version control to office; GitLab now used to manage all projects
+  \item Pioneered usage of a new framework which is now used office-wide
+  \item Trained coworkers regularly; topics included Git Flow and the \mbox{Laravel} Web Framework
+\end{tightitems}}
+
+%% \nopagebreak
+\section{Personal Projects}
+\cvitem{}{
+  \begin{tightitems}
+  \item Checkers player with custom-built Negamax search engine (Scheme, on GitHub)
+  \item Web server simulating a genealogy program (Clojure)
+  \item Lexer, parser, interpreter, and query optimizer for a Prolog-like language (C++)
+  \item Multiple real-time web applications (Elixir, Phoenix Framework, on GitHub)
+  \item Compiler for a small lambda calculus targeting x86 architecture (Racket, on GitHub)
+  \end{tightitems}}
+
+%% \nopagebreak
+\section{Leadership and Teaching Experience}
+\cvitem{Volunteer}{Served as a full-time volunteer for the Church of Jesus Christ of Latter-day Saints in Germany\begin{lesstightitems}
+\item Learned to speak fluent German and taught myself conversational Chinese
+\item Trained volunteers weekly to improve volunteer effectiveness and well-being
+\item Organized service projects and meetings involving volunteers across Germany
+  \end{lesstightitems}}
+\cvitem{Volunteer English Instructor}{Devised English lesson plans and instructed grade-school children in China for six weeks}
+\cvitem{Eagle Scout}{Planned and organized a food and clothing drive for the poor}
+
+%% \cvitem{}{
+%%   \begin{tightitems}
+%%   \item Performed before world-wide audiences with various choirs, including the BYU Men's Chorus---the largest collegiate male choir in the United States.
+%%   \item 
+%%   \item Served as a full-time volunteer for the Church of Jesus Christ of Latter-day Saints in Germany. Learned to speak fluent German and conversational Mandarin Chinese. Trained other volunteers on a weekly basis, organized meetings and service projects, and worked with people from dozens of nations.
+%%   \end{tightitems}}
+
+\end{document}

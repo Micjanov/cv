@@ -26,7 +26,7 @@ PANDOC_OPTIONS :=
 
 # Normally this does not need to be changed:
 # works if the template is local or in ~/.pandoc/templates
-PANDOC_TMPL := Assets/template.tex
+PANDOC_TMPL := assets/one-column.tex
 
 ## ---- subdirectories (normally, no need to change) ----
 
@@ -37,9 +37,9 @@ PANDOC_TMPL := Assets/template.tex
 temp_dir := tmp
 
 # name of output directory for .pdf files
-out_dir := Output
+out_dir := output
 # name of input directory for .yml and .latex files
-in_dir := Input
+in_dir := input
 
 ## ---- commands ----
 
