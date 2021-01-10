@@ -11,12 +11,11 @@ Curriculum vitae template that uses LaTeX for rendering, via Pandoc.
 
 ** Configuration
 
-- Sections and layout: Assets/template.latex
-- Details: Input/%.yml
+- Sections and layout: assets/template.latex
+- Details: input/%.yml
 
 The /lang/ variable allows you to have different section names, if you want a
 bilingual CV.
-
 
 ** Usage
 
@@ -26,4 +25,4 @@ Compile the documents using make
   make
 #+END_SRC
 
-The pdf documents will appear in the *Output* folder.
+The pdf documents will appear in the *output* folder.

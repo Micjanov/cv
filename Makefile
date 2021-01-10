@@ -74,6 +74,5 @@ all: $(pdfs) clean
 # clean up everything except final pdfs
 clean:
 	latexmk -c .
-	rm $(out_dir)/*.{aux,xdv,log,fls,fdb_latexmk}
 
 .DEFAULT_GOAL := all
