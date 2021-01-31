@@ -8,7 +8,6 @@ latex_quiet := true
 # Otherwise these files will be regenerated only when the source markdown
 # changes; in that case, if you change other dependencies (e.g. a
 # bibliography), use the -B option to make in order to force regeneration.
-# always_latexmk := true
 always_latexmk := true
 
 # Set to anything non-empty to use xelatex rather than pdflatex. I always do
@@ -17,7 +16,7 @@ always_latexmk := true
 xelatex := true
 
 # list of markdown files that are not to be made into PDFs
-EXCLUDE := README.org
+EXCLUDE :=
 
 # Extra options to pandoc (e.g. "-H mypreamble.tex")
 PANDOC_OPTIONS :=
@@ -30,16 +29,13 @@ PANDOC_TMPL := assets/one-column.tex
 
 ## ---- subdirectories (normally, no need to change) ----
 
-# source of YAML spec files
-#yml_dir := .
-
 # temporary file subdirectory; will be removed after every latex run
-temp_dir := tmp
+TEMP_DIR := tmp
 
 # name of output directory for .pdf files
-out_dir := output
+OUT_DIR := output
 # name of input directory for .yml and .latex files
-in_dir := input
+IN_DIR := input
 
 ## ---- commands ----
 
@@ -52,18 +48,16 @@ LATEXMK := latexmk $(if $(xelatex),-xelatex,-pdflatex="pdflatex %O %S") \
 
 ## ---- build rules ----
 
-ymls := $(filter-out $(addprefix $(in_dir)/,$(EXCLUDE)),$(wildcard $(in_dir)/*.yml))
-pdfs_path := $(filter-out $(addprefix $(out_dir)/,$(EXCLUDE)),$(wildcard $(out_dir)/*.pdf))
+ymls := $(filter-out $(addprefix $(IN_DIR)/,$(EXCLUDE)),$(wildcard $(IN_DIR)/*.yml))
+pdfs_path := $(filter-out $(addprefix $(OUT_DIR)/,$(EXCLUDE)),$(wildcard $(OUT_DIR)/*.pdf))
 texs := $(patsubst %.yml,%.tex,$(ymls))
 pdfs := $(patsubst %.yml,%.pdf,$(ymls))
-bibs := $(wildcard $(in_dir)/*.bib)
+bibs := $(wildcard $(IN_DIR)/*.bib)
 
 $(texs): %.tex: %.yml $(bibs) $(PANDOC_TMPL)
 	$(PANDOC) -o $@ $<
 
-phony_pdfs := $(if $(always_latexmk),$(pdfs) $(notes_pdf))
-
-.PHONY: $(phony_pdfs) all clean
+.PHONY: all clean
 
 $(pdfs): %.pdf: %.tex
 	@echo $(bibs)
