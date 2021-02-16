@@ -1,7 +1,6 @@
 ---
-# Personal details
-name:          Amin Kasrou Aouam
-phone:         +34 658591161
+name:          Amin
+lastname:      Kasrou Aouam
 email:         akasroua@gmail.com
 gitlab:        akasroua
 lang:          es
@@ -9,8 +8,6 @@ lang:          es
 
 about:         |
   Estudiante de Ingeniería Informática, interesado en las áreas de inteligencia artificial, bioinformática, infraestructura como código (IaC), sistemas distribuidos e inmutables.
-
-  Busco una oportunidad laboral instructiva, con un énfasis en el trabajo en grupo y la colaboración.
 
 education:
 - years:
@@ -39,28 +36,28 @@ education:
   institution:  "Université Paris-Sud"
 
 programming:
-- language: Python
-  proficiency: Avanzado
-
-- language: C++
-  proficiency: Intermedio
-
-- language: Nix
-  proficiency: Intermedio
-
-- language: Java
-  proficiency: Básico
-
-- language: PHP
-  proficiency: Básico
+- Python
+- C++
+- Nix
+- Java
+- PHP
 
 technologies:
-  - Linux/FreeBSD
-  - \LaTeX
-  - Git
-  - LEMP Stack
-  - APIs REST
-  - SQL
+- \LaTeX
+- Git
+- REST APIs
+- SQL
+- NixOS
+
+platforms:
+- Linux
+- FreeBSD
+- DragonFlyBSD
+- Android
+
+projects:
+- Bot de Telegram COVID-19
+
 
 languages:
 - language: Inglés
@@ -70,8 +67,6 @@ languages:
   proficiency: Nativo
 
 - language: Francés
-  proficiency: Nativo
-
 courses:
 - name: Fundamentos de Robótica
   institution: Adams Formación

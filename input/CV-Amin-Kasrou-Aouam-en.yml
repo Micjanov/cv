@@ -1,7 +1,6 @@
 ---
-# Personal details
-name:          Amin Kasrou Aouam
-phone:         +34 658591161
+name:          Amin
+lastname:      Kasrou Aouam
 email:         akasroua@gmail.com
 gitlab:        akasroua
 lang:          en
@@ -9,8 +8,6 @@ lang:          en
 
 about:         |
   Computer Engineering student interested in AI, bioinformatics, Infrastructure as Code (IaC), distributed and immutable systems.
-
-  I am looking for an employment opportunity, with a focus on teamwork and collaboration.
 
 education:
 - years:
@@ -38,28 +35,26 @@ education:
   institution:  "Université Paris-Sud"
 
 programming:
-- language: Python
-  proficiency: Good 
-
-- language: C++
-  proficiency: Intermediate
-
-- language: Nix
-  proficiency: Intermediate 
-
-- language: Java
-  proficiency: Basic 
-
-- language: PHP
-  proficiency: Basic
+- Python
+- C++
+- Nix
+- Java
+- PHP
 
 technologies:
-  - Linux/FreeBSD
-  - \LaTeX
-  - Git
-  - LEMP Stack
-  - REST APIs
-  - SQL
+- \LaTeX
+- Git
+- REST APIs
+- SQL
+
+platforms:
+- Linux
+- FreeBSD
+- DragonFlyBSD
+- Android
+
+projects:
+- COVID-19 Telegram Bot
 
 languages:
 - language: English
