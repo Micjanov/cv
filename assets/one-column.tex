@@ -1,7 +1,7 @@
 \documentclass[12pt,letterpaper]{moderncv}
 
 \usepackage{fontspec}
-\usepackage[inline]{enumitem}
+\usepackage{fontawesome5}
 
 %% ModernCV themes
 \moderncvstyle{fancy}
@@ -11,12 +11,20 @@
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.75,right=.45in,left=.45in,top=.4in,bottom=.4in]{geometry}
 
+% Change email icon
+\providecommand*{\emailsymbol}{}
+\renewcommand*{\emailsymbol}{{\small\faEnvelope}~}
+
+% Workaround to show gitlab icon in social
+\providecommand*{\gitlabsocialsymbol}{}
+\renewcommand*{\gitlabsocialsymbol}{{\small\faGitlab}~}
+
 %% Personal data
 \firstname{$name$}
 \familyname{$lastname$}
 \title{$about$}
-\email{\mbox{$email$}}
-\social[gitlab]{$gitlab$}
+\email{$email$}
+\social[gitlab][gitlab.com/$gitlab$]{$gitlab$}
 \photo[64pt][0.4pt]{assets/photo.png}
 
 \setlength{\hintscolumnwidth}{1.7in}
@@ -79,5 +87,13 @@ $endfor$
         \item{$projects$}
     $endfor$
   \end{tightitems}}
+\ifthenelse{\equal{$lang$}{en}}
+    {\section{Languages}}
+    {\section{Idiomas}}
+$for(languages)$
+  \cvlanguage{$languages.language$}{
+    $languages.proficiency$
+  }{}
+$endfor$
 
 \end{document}
