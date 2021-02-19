@@ -67,6 +67,6 @@ all: $(pdfs) clean
 
 # clean up everything except final pdfs
 clean:
-	latexmk -c .
+	latexmk -c output/*
 
 .DEFAULT_GOAL := all
