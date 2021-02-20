@@ -15,9 +15,6 @@ always_latexmk := true
 # faster, and there are some packages with which xelatex is incompatible.
 xelatex := true
 
-# list of markdown files that are not to be made into PDFs
-EXCLUDE :=
-
 # Extra options to pandoc (e.g. "-H mypreamble.tex")
 PANDOC_OPTIONS :=
 
@@ -32,11 +29,6 @@ PANDOC_TMPL := assets/one-column.tex
 # temporary file subdirectory; will be removed after every latex run
 TEMP_DIR := tmp
 
-# name of output directory for .pdf files
-OUT_DIR := output
-# name of input directory for .yml and .latex files
-IN_DIR := input
-
 ## ---- commands ----
 
 # Change these only to really change the behavior of the whole setup
@@ -48,11 +40,9 @@ LATEXMK := latexmk $(if $(xelatex),-xelatex,-pdflatex="pdflatex %O %S") \
 
 ## ---- build rules ----
 
-ymls := $(filter-out $(addprefix $(IN_DIR)/,$(EXCLUDE)),$(wildcard $(IN_DIR)/*.yml))
-pdfs_path := $(filter-out $(addprefix $(OUT_DIR)/,$(EXCLUDE)),$(wildcard $(OUT_DIR)/*.pdf))
-texs := $(patsubst %.yml,%.tex,$(ymls))
-pdfs := $(patsubst %.yml,%.pdf,$(ymls))
-bibs := $(wildcard $(IN_DIR)/*.bib)
+texs := $(patsubst %.yml,%.tex, $(wildcard *.yml))
+pdfs := $(patsubst %.yml,%.pdf, $(wildcard *.yml))
+bibs := $(wildcard *.bib)
 
 $(texs): %.tex: %.yml $(bibs) $(PANDOC_TMPL)
 	$(PANDOC) -o $@ $<
@@ -67,6 +57,6 @@ all: $(pdfs) clean
 
 # clean up everything except final pdfs
 clean:
-	latexmk -c output/*
+	rm *.log *.xdv *.aux *.fls *.fdb_latexmk *.out *.tex
 
 .DEFAULT_GOAL := all

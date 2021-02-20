@@ -1,7 +1,0 @@
-input/*.tex
-output/*.tex
-*.log
-*.xdv
-*.aux
-*.fls
-*.fdb_latexmk
