@@ -36,21 +36,21 @@ technologies:
   items:
     - Python
     - C++
-    - Nix
     - Java
     - PHP
 - category: Tools
   items:
     - \LaTeX
     - Git
-    - REST APIs
     - SQL
+    - Nix
 - category: Platforms
   items:
     - Linux
     - FreeBSD
     - DragonFlyBSD
     - Android
+    - NixOS
 
 freelance:
 - client: Odyfo
@@ -60,7 +60,7 @@ freelance:
     - "Migración de MySQL a PostgreSQL"
 
 projects:
-- "COVID-19 Telegram Bot"
+- "Telegram bot to notify of COVID-19 cases"
 
 languages:
 - language: English
@@ -79,7 +79,7 @@ courses:
 - name: Python Programming
   institution: Universidad de Granada
 
-- name: Programming and distribution of mobile apps for Android and iOS devices
+- name: Mobile apps programming for Android and iOS devices
   institution: Universidad de Granada
 
 - name: Arduino
