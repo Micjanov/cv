@@ -1,4 +1,4 @@
-\documentclass[12pt,letterpaper]{moderncv}
+\documentclass[11pt,letterpaper]{moderncv}
 
 \usepackage{fontspec}
 \usepackage{fontawesome5}
@@ -84,6 +84,18 @@ $for(experience)$
   \begin{tightitems}
     $for(experience.description)$
       \item $experience.description$
+    $endfor$
+  \end{tightitems}}
+$endfor$
+
+\ifthenelse{\equal{$lang$}{en}}
+    {\subsection{Freelance projects}}
+    {\subsection{Proyectos freelance}}
+$for(freelance)$
+  \cventry{}{$freelance.summary$}{$freelance.client$}{}{}{
+  \begin{tightitems}
+    $for(freelance.description)$
+      \item{$freelance.description$}
     $endfor$
   \end{tightitems}}
 $endfor$

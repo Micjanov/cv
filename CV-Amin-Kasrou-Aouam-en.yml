@@ -52,6 +52,13 @@ technologies:
     - DragonFlyBSD
     - Android
 
+freelance:
+- client: Odyfo
+  summary: Development of a REST API
+  description:
+    - "Reimplementación de una API CRUD para apps móviles usando Python (FastAPI)"
+    - "Migración de MySQL a PostgreSQL"
+
 projects:
 - "COVID-19 Telegram Bot"
 
