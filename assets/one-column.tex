@@ -35,7 +35,7 @@
                  \begin{itemize}[topsep=0pt,partopsep=0pt,itemsep=0pt,parsep=0pt]}
                {\end{itemize}\vspace{-10pt}}
 \newenvironment{lesstightitems}
-               {\noindent\ignorespaces
+               {\noindent\ignorespaces{}
                  \begin{itemize}[topsep=0pt,partopsep=0pt,itemsep=0pt,parsep=0pt]}
                {\end{itemize}\vspace{-10pt}}
 
@@ -51,6 +51,15 @@
     {\section{Educación}}
 $for(education)$
   \cventry{$education.years.start$ \textendash{} $education.years.end$}{$education.degree$}{$education.focus$}{$education.institution$}{}{}
+$endfor$
+
+\ifthenelse{\equal{$lang$}{en}}
+    {\subsection{Courses}}
+    {\subsection{Cursos}}
+$for(courses)$
+  \cvitem{$courses.name$}{
+    $courses.institution$
+  }{}
 $endfor$
 
 
