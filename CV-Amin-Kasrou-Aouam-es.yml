@@ -80,6 +80,15 @@ courses:
   institution: Universidad de Granada
  
 experience:
+- company: COACE
+  years:
+    start: "January 2021"
+    end: "present"
+  position: Internship
+  location: Ceuta, Spain
+  description:
+    - "Administración de sistemas de un colegio oficial"
+    - "Gestión de un servidor Linux"
 - company: JITKey
   years:
     start: "Febrero 2020"
