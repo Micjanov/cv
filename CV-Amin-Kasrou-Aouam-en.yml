@@ -16,14 +16,12 @@ education:
   degree:      Bachelor
   focus:       Computer Engineering
   institution:  "Universidad de Granada"
-  campus: Ceuta
 
 - years:
     start: 2015
     end: 2017
   degree: Bachelor
   focus: Medicine
-  campus: Sevilla
   institution: "Universidad de Sevilla"
 
 - years:
@@ -31,7 +29,6 @@ education:
     end: 2015
   degree: Bachelor
   focus: Medicine
-  campus: Châtenay-Malabry
   institution: "Université Paris-Sud"
 
 technologies:
