@@ -13,27 +13,27 @@ education:
 - years:
     start: 2017
     end: presente
-  degree:      Grado
-  focus:       Ingeniería Informática
-  institution:  "Universidad de Granada"
+  degree: Grado
+  focus: Ingeniería Informática
+  institution: "Universidad de Granada"
   campus: Ceuta
 
 - years:
     start: 2015
     end: 2017
-  degree:      Grado
-  focus:       Medicina
+  degree: Grado
+  focus: Medicina
   campus: Sevilla
-  institution:  "Universidad de Sevilla"
+  institution: "Universidad de Sevilla"
 
 
 - years:
     start: 2013
     end: 2015
-  degree:      Grado
-  focus:       Medicina
+  degree: Grado
+  focus: Medicina
   campus: Châtenay-Malabry
-  institution:  "Université Paris-Sud"
+  institution: "Université Paris-Sud"
 
 technologies:
   programming:
@@ -55,8 +55,6 @@ technologies:
 
 projects:
 - "Bot de Telegram COVID-19"
-
-
 
 languages:
 - language: Inglés
@@ -82,11 +80,13 @@ courses:
   institution: Universidad de Granada
  
 experience:
-- company:     JITKey
+- company: JITKey
   years:
-    start:     "Febrero 2020"
-    end:       "Marzo 2020"
-  position:    Prácticas
+    start: "Febrero 2020"
+    end: "Marzo 2020"
+  position: Prácticas
   location: Remoto
-  description: "Responsable de Soporte en una startup española. Suspendidas debido al COVID-19"
+  description:
+    - "Responsable de Soporte en una startup española"
+    - "Suspendidas debido al COVID-19"
 ---

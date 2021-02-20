@@ -83,7 +83,12 @@ $endfor$}
     {\section{Work Experience}}
     {\section{Experiencia laboral}}
 $for(experience)$
-    \cventry{$experience.years.start$ \textendash{} $experience.years.end$}{$experience.position$}{$experience.company$}{$experience.location$}{}{$experience.description$}
+\cventry{$experience.years.start$ \textendash{} $experience.years.end$}{$experience.position$}{$experience.company$}{$experience.location$}{}{
+  \begin{tightitems}
+    $for(experience.description)$
+      \item $experience.description$
+    $endfor$
+  \end{tightitems}}
 $endfor$
 
 
