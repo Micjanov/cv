@@ -2,6 +2,7 @@
 
 \usepackage{fontspec}
 \usepackage{fontawesome5}
+\usepackage[inline]{enumitem}
 
 %% ModernCV themes
 \moderncvstyle{fancy}
@@ -44,49 +45,59 @@
 ]{Cormorant Garamond}
 \makecvtitle{}
 
-\section{Education}
+
+\ifthenelse{\equal{$lang$}{en}}
+    {\section{Education}}
+    {\section{Educación}}
 $for(education)$
   \cventry{$education.years.start$ \textendash{} $education.years.end$}{$education.degree$}{$education.focus$}{$education.institution$}{}{}
 $endfor$
 
-\section{Skill Set}
-\cvitem{Programming languages}{
-  \begin{itemize*}
-    $for(programming)$
-        \item{$programming$}
-    $endfor$
-  \end{itemize*}}
 
-\cvitem{Technologies}{
-  \begin{itemize*}
-    $for(technologies)$
-        \item{$technologies$}
-    $endfor$
-  \end{itemize*}}
+\ifthenelse{\equal{$lang$}{en}}
+    {\section{Technologies}}
+    {\section{Tecnologías}}
+\cvline{Programming languages}{
+$for(technologies.programming)$
+\begin{itemize*}[label=, itemjoin={{,}}]
+    \item{$technologies.programming$}
+\end{itemize*}
+$endfor$}
 
-\cvitem{Platforms}{
-  \begin{itemize*}
-    $for(platforms)$
-        \item{$platforms$}
-    $endfor$
-  \end{itemize*}}
+\cvline{Tools}{
+$for(technologies.tools)$
+\begin{itemize*}[label=, itemjoin={{,}}]
+    \item{$technologies.tools$}
+\end{itemize*}
+$endfor$}
 
-\section{Work Experience}
+\cvline{Platforms}{
+$for(technologies.platforms)$
+\begin{itemize*}[label=, itemjoin={{,}}]
+    \item{$technologies.platforms$}
+\end{itemize*}
+$endfor$}
+
+
+\ifthenelse{\equal{$lang$}{en}}
+    {\section{Work Experience}}
+    {\section{Experiencia laboral}}
 $for(experience)$
-    \cventry{$experience.years.start$ \textendash{} $education.years.end$}{$experience.position$}{$experience.company$}{}{}{
-    \begin{tightitems}
-        \item $description$
-    \end{tightitems}}
+    \cventry{$experience.years.start$ \textendash{} $experience.years.end$}{$experience.position$}{$experience.company$}{$experience.location$}{}{$experience.description$}
 $endfor$
 
 
-\section{Personal Projects}
-\cvitem{}{
-  \begin{tightitems}
-    $for(projects)$
-        \item{$projects$}
-    $endfor$
-  \end{tightitems}}
+\ifthenelse{\equal{$lang$}{en}}
+    {\section{Personal Projects}}
+    {\section{Proyectos personales}}
+    \cvitem{}{
+      \begin{tightitems}
+        $for(projects)$
+          \item $projects$
+        $endfor$
+      \end{tightitems}
+    }
+
 \ifthenelse{\equal{$lang$}{en}}
     {\section{Languages}}
     {\section{Idiomas}}

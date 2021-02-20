@@ -34,27 +34,26 @@ education:
   campus: Châtenay-Malabry
   institution:  "Université Paris-Sud"
 
-programming:
-- Python
-- C++
-- Nix
-- Java
-- PHP
-
 technologies:
-- \LaTeX
-- Git
-- REST APIs
-- SQL
-
-platforms:
-- Linux
-- FreeBSD
-- DragonFlyBSD
-- Android
+  programming:
+    - Python
+    - C++
+    - Nix
+    - Java
+    - PHP
+  tools:
+    - \LaTeX
+    - Git
+    - REST APIs
+    - SQL
+  platforms:
+    - Linux
+    - FreeBSD
+    - DragonFlyBSD
+    - Android
 
 projects:
-- COVID-19 Telegram Bot
+- "COVID-19 Telegram Bot"
 
 languages:
 - language: English
@@ -82,8 +81,9 @@ courses:
 experience:
 - company:     JITKey
   years:
-    start:     'February 2020'
-    end:       'March 2020'
+    start:     "February 2020"
+    end:       "March 2020"
   position:    Internship
+  location: Remote
   description: "Support Manager at a startup in Spain. Cut short due to the COVID-19 pandemic"
 ---

@@ -35,28 +35,27 @@ education:
   campus: Châtenay-Malabry
   institution:  "Université Paris-Sud"
 
-programming:
-- Python
-- C++
-- Nix
-- Java
-- PHP
-
 technologies:
-- \LaTeX
-- Git
-- REST APIs
-- SQL
-- NixOS
-
-platforms:
-- Linux
-- FreeBSD
-- DragonFlyBSD
-- Android
+  programming:
+    - Python
+    - C++
+    - Nix
+    - Java
+    - PHP
+  tools:
+    - \LaTeX
+    - Git
+    - REST APIs
+    - SQL
+  platforms:
+    - Linux
+    - FreeBSD
+    - DragonFlyBSD
+    - Android
 
 projects:
-- Bot de Telegram COVID-19
+- "Bot de Telegram COVID-19"
+
 
 
 languages:
@@ -67,6 +66,8 @@ languages:
   proficiency: Nativo
 
 - language: Francés
+  proficiency: Nativo
+
 courses:
 - name: Fundamentos de Robótica
   institution: Adams Formación
@@ -83,8 +84,9 @@ courses:
 experience:
 - company:     JITKey
   years:
-    start:     'Febrero 2020'
-    end:       'Marzo 2020'
+    start:     "Febrero 2020"
+    end:       "Marzo 2020"
   position:    Prácticas
+  location: Remoto
   description: "Responsable de Soporte en una startup española. Suspendidas debido al COVID-19"
 ---
