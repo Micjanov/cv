@@ -35,18 +35,21 @@ education:
   institution: "Université Paris-Sud"
 
 technologies:
-  programming:
+- category: Programming languages
+  items:
     - Python
     - C++
     - Nix
     - Java
     - PHP
-  tools:
+- category: Tools
+  items:
     - \LaTeX
     - Git
     - REST APIs
     - SQL
-  platforms:
+- category: Platforms
+  items:
     - Linux
     - FreeBSD
     - DragonFlyBSD

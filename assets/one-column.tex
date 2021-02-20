@@ -57,26 +57,14 @@ $endfor$
 \ifthenelse{\equal{$lang$}{en}}
     {\section{Technologies}}
     {\section{Tecnologías}}
-\cvline{Programming languages}{
-$for(technologies.programming)$
-\begin{itemize*}[label=, itemjoin={{,}}]
-    \item{$technologies.programming$}
-\end{itemize*}
-$endfor$}
-
-\cvline{Tools}{
-$for(technologies.tools)$
-\begin{itemize*}[label=, itemjoin={{,}}]
-    \item{$technologies.tools$}
-\end{itemize*}
-$endfor$}
-
-\cvline{Platforms}{
-$for(technologies.platforms)$
-\begin{itemize*}[label=, itemjoin={{,}}]
-    \item{$technologies.platforms$}
-\end{itemize*}
-$endfor$}
+$for(technologies)$
+  \cvline{$technologies.category$}{
+  \begin{itemize*}[label=, itemjoin={{,}}]
+    $for(technologies.items)$
+      \item{$technologies.items$}
+    $endfor$
+  \end{itemize*}}
+$endfor$
 
 
 \ifthenelse{\equal{$lang$}{en}}
