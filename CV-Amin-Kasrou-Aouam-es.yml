@@ -61,7 +61,7 @@ freelance:
     - "Migration from MySQL to PostgreSQL"
 
 projects:
-- "Bot de Telegram para la notificación de casos de COVID-19"
+- "Bot de Telegram para la notificación de casos de COVID-19 (Python)"
 
 languages:
 - language: Inglés
@@ -95,16 +95,17 @@ experience:
   city: Ceuta
   country: España
   description:
-    - "Administración de sistemas de un colegio oficial"
-    - "Gestión de un servidor Linux"
+    - "Administrador de sistemas de un colegio oficial"
+    - "Gestión de un servidor Linux, hardware de red y PCs"
 - company: JITKey
   years:
     start: "Febrero 2020"
     end: "Marzo 2020"
   position: Prácticas
   city: Remoto
-  country:
+  country: España
   description:
-    - "Responsable de Soporte en una startup española"
+    - "Responsable de soporte en una startup de gestión de apartamentos turísticos"
+    - "Encargado de la comunicación de con los huéspedes y los propietarios via email y teléfono"
     - "Suspendidas debido al COVID-19"
 ---

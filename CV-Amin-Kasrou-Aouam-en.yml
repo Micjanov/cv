@@ -56,11 +56,11 @@ freelance:
 - client: Odyfo
   summary: Development of a REST API
   description:
-    - "Reimplementación de una API CRUD para apps móviles usando Python (FastAPI)"
-    - "Migración de MySQL a PostgreSQL"
+    - "Rewrite of CRUD API that serves mobile apps using Python (FastAPI)"
+    - "Migration from MySQL to PostgreSQL"
 
 projects:
-- "Telegram bot to notify of COVID-19 cases"
+- "Telegram bot to notify of COVID-19 cases (Python)"
 
 languages:
 - language: English
@@ -94,16 +94,17 @@ experience:
   city: Ceuta
   country: Spain
   description:
-    - "System administration of a regulatory college"
-    - "Management of a Linux server"
+    - "System administrator of a regulatory college"
+    - "Management of a Linux server, networking equipment and PCs"
 - company: JITKey
   years:
     start: "February 2020"
     end: "March 2020"
   position: Internship
   city: Remote
-  country: 
+  country: Spain
   description:
-    - "Support Manager at a startup in Spain"
-    - "Cut short due to the COVID-19 pandemic"
+    - "Support Manager at a tourist accomodations management startup"
+    - "In charge of guest and host communications via email and phone"
+    - "Interrupted due to the COVID-19 pandemic"
 ---
