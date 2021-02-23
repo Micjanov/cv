@@ -22,7 +22,7 @@ PANDOC_OPTIONS :=
 
 # Normally this does not need to be changed:
 # works if the template is local or in ~/.pandoc/templates
-PANDOC_TMPL := assets/one-column.tex
+PANDOC_TMPL := assets/template.tex
 
 ## ---- subdirectories (normally, no need to change) ----
 
