@@ -62,6 +62,8 @@ freelance:
 
 projects:
 - "Bot de Telegram para la notificación de casos de COVID-19 (Python)"
+- "Configuración declarativa de un servidor (Nix)"
+- "Contribuciones open source a NixOS (Nix)"
 
 languages:
 - language: Inglés
