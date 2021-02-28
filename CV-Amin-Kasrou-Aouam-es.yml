@@ -57,8 +57,8 @@ freelance:
 - client: Odyfo
   summary: Desarrollo de una API REST
   description:
-    - "Rewrite of a CRUD API that serves mobile apps using Python (FastAPI)"
-    - "Migration from MySQL to PostgreSQL"
+    - "Reimplementación de una API CRUD para apps móviles usando Python (FastAPI)"
+    - "Limpieza de la base de datos SQL y migración a SQLite"
 
 projects:
 - "Bot de Telegram para la notificación de casos de COVID-19 (Python)"

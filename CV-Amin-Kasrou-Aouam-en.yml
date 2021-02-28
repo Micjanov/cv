@@ -57,7 +57,7 @@ freelance:
   summary: Development of a REST API
   description:
     - "Rewrite of CRUD API that serves mobile apps using Python (FastAPI)"
-    - "Migration from MySQL to PostgreSQL"
+    - "Database cleanup and migration to SQLite"
 
 projects:
 - "Telegram bot to notify of COVID-19 cases (Python)"
