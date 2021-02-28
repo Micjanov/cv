@@ -35,10 +35,10 @@ technologies:
 - category: Programming languages
   items:
     - Python
+    - R
     - C++
     - Java
     - PHP
-    - R
 - category: Tools
   items:
     - \LaTeX
@@ -53,13 +53,6 @@ technologies:
     - Android
     - NixOS
 
-freelance:
-- client: Odyfo
-  summary: Development of a REST API
-  description:
-    - "Rewrite of CRUD API that serves mobile apps using Python (FastAPI)"
-    - "Database cleanup and migration to SQLite"
-
 projects:
 - "Telegram bot to notify of COVID-19 cases (Python)"
 - "Declarative configuration of a home server (Nix)"
@@ -73,6 +66,9 @@ languages:
   proficiency: Native
 
 - language: French
+  proficiency: Native
+
+- language: Arabic (Moroccan dialect)
   proficiency: Native
 
 courses:
@@ -93,12 +89,22 @@ experience:
   years:
     start: "January 2021"
     end: "present"
-  position: Internship
+  position: Freelance
   city: Ceuta
   country: Spain
   description:
     - "System administrator of a regulatory college"
     - "Management of a Linux server, networking equipment and PCs"
+- company: Odyfo
+  years:
+    start: "March 2020"
+    end: "present"
+  position: Freelance
+  city: Remote
+  country: Spain
+  description:
+    - "Rewrite of CRUD API that serves mobile apps using Python (FastAPI)"
+    - "Database cleanup and migration to SQLite"
 - company: JITKey
   years:
     start: "February 2020"

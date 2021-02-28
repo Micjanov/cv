@@ -36,10 +36,10 @@ technologies:
 - category: Lenguajes de programación
   items:
     - Python
+    - R
     - C++
     - Java
     - PHP
-    - R
 - category: Herramientas
   items:
     - \LaTeX
@@ -54,13 +54,6 @@ technologies:
     - Android
     - NixOS
 
-freelance:
-- client: Odyfo
-  summary: Desarrollo de una API REST
-  description:
-    - "Reimplementación de una API CRUD para apps móviles usando Python (FastAPI)"
-    - "Limpieza de la base de datos SQL y migración a SQLite"
-
 projects:
 - "Bot de Telegram para la notificación de casos de COVID-19 (Python)"
 - "Configuración declarativa de un servidor (Nix)"
@@ -74,6 +67,9 @@ languages:
   proficiency: Nativo
 
 - language: Francés
+  proficiency: Nativo
+
+- language: Darija (Dialecto marroquí)
   proficiency: Nativo
 
 courses:
@@ -93,13 +89,23 @@ experience:
 - company: COACE
   years:
     start: "Enero 2021"
-    end: "present"
-  position: Prácticas
+    end: "presente"
+  position: Freelance
   city: Ceuta
   country: España
   description:
     - "Administrador de sistemas de un colegio oficial"
     - "Gestión de un servidor Linux, hardware de red y PCs"
+- company: Odyfo
+  years:
+    start: "Marzo 2020"
+    end: "presente"
+  position: Freelance
+  city: Remoto
+  country: España
+  description:
+    - "Reimplementación de una API CRUD para apps móviles usando Python (FastAPI)"
+    - "Limpieza de la base de datos SQL y migración a SQLite"
 - company: JITKey
   years:
     start: "Febrero 2020"
