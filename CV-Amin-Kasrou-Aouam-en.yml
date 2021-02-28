@@ -38,6 +38,7 @@ technologies:
     - C++
     - Java
     - PHP
+    - R
 - category: Tools
   items:
     - \LaTeX
