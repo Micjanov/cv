@@ -95,7 +95,8 @@ experience:
   country: Spain
   description:
     - "System administrator of a regulatory college"
-    - "Management of a Linux server, networking equipment and PCs"
+    - "Migration from Ubuntu server to NixOS"
+    - "Deployment of a VPN, a cloud and an automated backup solution"
 - company: Odyfo
   years:
     start: "March 2020"

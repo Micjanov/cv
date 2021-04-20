@@ -96,7 +96,8 @@ experience:
   country: España
   description:
     - "Administrador de sistemas de un colegio oficial"
-    - "Gestión de un servidor Linux, hardware de red y PCs"
+    - "Migración de Ubuntu server a NixOS"
+    - "Despliegue de una VPN, nube y solución automática de backups"
 - company: Odyfo
   years:
     start: "Marzo 2020"
