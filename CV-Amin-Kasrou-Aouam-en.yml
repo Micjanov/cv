@@ -45,6 +45,7 @@ technologies:
     - Git
     - SQL
     - Nix
+    - ZFS
 - category: Platforms
   items:
     - Linux
