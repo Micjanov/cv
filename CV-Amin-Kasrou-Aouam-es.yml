@@ -7,7 +7,7 @@ lang:          es
 #publications:  '\*'
 
 about:         |
-  Estudiante de Ingeniería Informática interesado en bioinformática, inteligencia artificial, infraestructura como código (IaC), sistemas distribuidos e inmutables.
+  Estudiante de Ingeniería Informática interesado en bioinformática, inteligencia artificial e infraestructura como código (IaC)
 
 education:
 - years:
@@ -62,7 +62,7 @@ projects:
 
 languages:
 - language: Inglés
-  proficiency: Fluido
+  proficiency: TOEFL (106/120)
 
 - language: Español
   proficiency: Nativo

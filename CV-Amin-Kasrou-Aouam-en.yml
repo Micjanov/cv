@@ -7,7 +7,7 @@ lang:          en
 #publications:  '\*'
 
 about:         |
-  Computer Engineering student interested in bioinformatics, AI, Infrastructure as Code (IaC), distributed and immutable systems.
+  Computer Engineering student interested in bioinformatics, AI and Infrastructure as Code (IaC)
 
 education:
 - years:
@@ -61,7 +61,7 @@ projects:
 
 languages:
 - language: English
-  proficiency: Fluent
+  proficiency: TOEFL (106/120)
 
 - language: Spanish
   proficiency: Native
