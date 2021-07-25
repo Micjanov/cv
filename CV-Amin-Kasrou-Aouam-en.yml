@@ -7,12 +7,12 @@ lang:          en
 #publications:  '\*'
 
 about:         |
-  Computer Engineering student interested in bioinformatics, AI and Infrastructure as Code (IaC)
+  Computer Engineer interested in bioinformatics, AI and Infrastructure as Code (IaC)
 
 education:
 - years:
     start: 2017
-    end: present
+    end: 2021
   degree:      Bachelor
   focus:       Computer Engineering
   institution:  "Universidad de Granada"

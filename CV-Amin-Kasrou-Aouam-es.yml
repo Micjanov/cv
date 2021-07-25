@@ -7,12 +7,12 @@ lang:          es
 #publications:  '\*'
 
 about:         |
-  Estudiante de Ingeniería Informática interesado en bioinformática, inteligencia artificial e infraestructura como código (IaC)
+  Ingeniero informático interesado en bioinformática, inteligencia artificial e infraestructura como código (IaC)
 
 education:
 - years:
     start: 2017
-    end: presente
+    end: 2021
   degree: Grado
   focus: Ingeniería Informática
   institution: "Universidad de Granada"
