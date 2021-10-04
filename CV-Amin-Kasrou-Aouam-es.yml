@@ -105,11 +105,10 @@ experience:
     - "Administrador de sistemas de un colegio oficial"
     - "Migración de Ubuntu server a NixOS"
     - "Despliegue de una VPN, nube, servidor DNS y solución automática de backups"
-    - "Redacción de un manual de documentación técnica de los sistemas y servicios informáticos desplegados"
 - company: Odyfo
   years:
     start: "Marzo 2020"
-    end: "presente"
+    end: "Septiembre 2021"
   position: Freelance
   city: Remoto
   country: España
