@@ -11,6 +11,13 @@ about:         |
 
 education:
 - years:
+    start: 2021
+    end: present
+  degree:      Master
+  focus:       Bioinformatics (Engineering)
+  institution:  "Universiteit Ghent"
+
+- years:
     start: 2017
     end: 2021
   degree:      Bachelor
