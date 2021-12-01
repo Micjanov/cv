@@ -49,6 +49,7 @@ technologies:
     - C++
     - Java
     - PHP
+    - Shell scripting
 - category: Tools
   items:
     - \LaTeX

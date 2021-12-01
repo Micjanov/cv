@@ -50,6 +50,7 @@ technologies:
     - C++
     - Java
     - PHP
+    - Shell scripting
 - category: Herramientas
   items:
     - \LaTeX
