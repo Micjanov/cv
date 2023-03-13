@@ -25,20 +25,6 @@ education:
   focus: Ingeniería Informática
   institution: "Universidad de Granada"
 
-- years:
-    start: 2015
-    end: 2016
-  degree: Grado
-  focus: Medicina
-  institution: "Universidad de Sevilla"
-
-
-- years:
-    start: 2013
-    end: 2015
-  degree: Grado
-  focus: Medicina
-  institution: "Université Paris-Sud"
 
 technologies:
 - category: Lenguajes de programación

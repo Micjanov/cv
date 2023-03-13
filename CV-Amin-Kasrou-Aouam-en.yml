@@ -25,19 +25,6 @@ education:
   focus:       Computer Engineering
   institution:  "Universidad de Granada"
 
-- years:
-    start: 2015
-    end: 2016
-  degree: Bachelor
-  focus: Medicine
-  institution: "Universidad de Sevilla"
-
-- years:
-    start: 2013
-    end: 2015
-  degree: Bachelor
-  focus: Medicine
-  institution: "Université Paris-Sud"
 
 technologies:
 - category: Programming languages
