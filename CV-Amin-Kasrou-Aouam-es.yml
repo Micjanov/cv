@@ -25,6 +25,9 @@ education:
   focus: Ingeniería Informática
   institution: "Universidad de Granada"
 
+thesis:
+- name: "Machine Learning para corrección de errores en datos de secuenciación de ADN"
+  studies: Trabajo de fin de grado
 
 technologies:
 - category: Lenguajes de programación

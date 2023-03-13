@@ -25,6 +25,9 @@ education:
   focus:       Computer Engineering
   institution:  "Universidad de Granada"
 
+thesis:
+- name: "Machine Learning for error correction in DNA sequencing data"
+  studies: Bachelor thesis
 
 technologies:
 - category: Programming languages

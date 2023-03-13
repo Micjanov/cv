@@ -55,6 +55,15 @@ $for(education)$
 $endfor$
 
 \ifthenelse{\equal{$lang$}{en}}
+    {\subsection{Thesis}}
+    {\subsection{Trabajos de investigación}}
+$for(thesis)$
+  \cvitem{$thesis.studies$}{
+    $thesis.name$
+  }{}
+$endfor$
+
+\ifthenelse{\equal{$lang$}{en}}
     {\subsection{Courses}}
     {\subsection{Cursos}}
 $for(courses)$
