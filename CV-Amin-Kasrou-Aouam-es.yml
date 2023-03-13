@@ -55,8 +55,9 @@ technologies:
 
 projects:
 - "Bot de Telegram para la notificación de casos de COVID-19 (Python)"
-- "Configuración declarativa de un servidor (Nix)"
+- "Configuración declarativa de un servidor y portátil (Nix)"
 - "Contribuciones open source a NixOS (Nix)"
+- "Monitorización de temperatura y humedad usando MQTT (Arduino)"
 
 languages:
 - language: Inglés
@@ -105,7 +106,6 @@ experience:
   country: España
   description:
     - "Reimplementación de una API CRUD para apps móviles usando Python (FastAPI)"
-    - "Limpieza de la base de datos SQL y migración a SQLite"
 - company: JITKey
   years:
     start: "Febrero 2020"

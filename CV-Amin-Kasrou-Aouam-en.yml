@@ -55,8 +55,9 @@ technologies:
 
 projects:
 - "Telegram bot to notify students of COVID-19 cases (Python)"
-- "Declarative configuration of a home server (Nix)"
+- "Declarative configuration of a home server and workstation (Nix)"
 - "Open source contributions to NixOS (Nix)"
+- "Temperature and humidity logging via MQTT (Arduino)"
 
 languages:
 - language: English
@@ -105,7 +106,6 @@ experience:
   country: Spain
   description:
     - "Rewrite of CRUD API that serves mobile apps using Python (FastAPI)"
-    - "Database cleanup and migration to SQLite"
 - company: JITKey
   years:
     start: "February 2020"
