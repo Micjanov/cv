@@ -47,6 +47,7 @@ technologies:
     - SQL
     - Nix
     - ZFS
+    - MQTT
 - category: Platforms
   items:
     - Linux
@@ -59,7 +60,7 @@ projects:
 - "Telegram bot to notify students of COVID-19 cases (Python)"
 - "Declarative configuration of a home server and workstation (Nix)"
 - "Open source contributions to NixOS (Nix)"
-- "Temperature and humidity logging via MQTT (Arduino)"
+- "Temperature and humidity monitoring with MQTT (Arduino)"
 
 languages:
 - language: English

@@ -47,6 +47,7 @@ technologies:
     - SQL
     - Nix
     - ZFS
+    - MQTT
 - category: Plataformas
   items:
     - Linux
