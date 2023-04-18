@@ -48,6 +48,8 @@ technologies:
     - Nix
     - ZFS
     - MQTT
+    - Prometheus
+    - Grafana
 - category: Plataformas
   items:
     - Linux
