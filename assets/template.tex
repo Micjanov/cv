@@ -48,6 +48,17 @@
 ]{Cormorant Garamond}
 \makecvtitle{}
 
+\ifthenelse{\equal{$lang$}{en}}
+    {\section{Work Experience}}
+    {\section{Experiencia laboral}}
+$for(experience)$
+\cventry{$experience.years.start$ \textendash{} $experience.years.end$}{$experience.position$}{$experience.company$}{$experience.city$}{$experience.country$}{
+  \begin{tightitems}
+    $for(experience.description)$
+      \item $experience.description$
+    $endfor$
+  \end{tightitems}}
+$endfor$
 
 \ifthenelse{\equal{$lang$}{en}}
     {\section{Education}}
@@ -85,19 +96,6 @@ $for(technologies)$
       \item{$technologies.items$}
     $endfor$
   \end{itemize*}}
-$endfor$
-
-
-\ifthenelse{\equal{$lang$}{en}}
-    {\section{Work Experience}}
-    {\section{Experiencia laboral}}
-$for(experience)$
-\cventry{$experience.years.start$ \textendash{} $experience.years.end$}{$experience.position$}{$experience.company$}{$experience.city$}{$experience.country$}{
-  \begin{tightitems}
-    $for(experience.description)$
-      \item $experience.description$
-    $endfor$
-  \end{tightitems}}
 $endfor$
 
 
