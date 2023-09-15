@@ -45,8 +45,9 @@ technologies:
     - \LaTeX
     - Git
     - SQL
-    - Nix
     - ZFS
+    - Nginx
+    - Nix
     - MQTT
     - Prometheus
     - Grafana
