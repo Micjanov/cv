@@ -100,7 +100,7 @@ experience:
   country: Spain
   description:
     - "System administrator of a regulatory college"
-    - "Migration from Ubuntu server to NixOS"
+    - "Migration from a completely undocumented Ubuntu/Windows server to NixOS"
     - "Deployment of a VPN, a cloud, DNS server and an automated backup solution"
 - company: Odyfo
   years:
@@ -110,7 +110,6 @@ experience:
   city: Remote
   country: Spain
   description:
-    - "Rewrite of CRUD API that serves mobile apps using Python (FastAPI)"
 - company: JITKey
   years:
     start: "February 2020"
@@ -121,4 +120,7 @@ experience:
   description:
     - "Support Manager at a tourist accommodations management startup"
     - "Interrupted due to the COVID-19 pandemic"
+    - "Partial rewrite of a CRUD API that serves mobile apps using Python (FastAPI)"
+    - "Management and counsel on the management of the IT resources"
+    - "Deployment and refactoring of the Android app"
 ---
