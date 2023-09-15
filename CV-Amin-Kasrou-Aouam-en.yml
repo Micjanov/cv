@@ -111,16 +111,6 @@ experience:
   city: Remote
   country: Spain
   description:
-- company: JITKey
-  years:
-    start: "February 2020"
-    end: "March 2020"
-  position: Internship
-  city: Remote
-  country: Spain
-  description:
-    - "Support Manager at a tourist accommodations management startup"
-    - "Interrupted due to the COVID-19 pandemic"
     - "Partial rewrite of a CRUD API that serves mobile apps using Python (FastAPI)"
     - "Management and counsel on the management of the IT resources"
     - "Deployment and refactoring of the Android app"
