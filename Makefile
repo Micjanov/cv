@@ -57,6 +57,6 @@ all: $(pdfs) clean
 
 # clean up everything except final pdfs
 clean:
-	rm *.log *.xdv *.aux *.fls *.fdb_latexmk *.out
+	rm *.log *.xdv *.aux *.fls *.fdb_latexmk *.out *.tex
 
 .DEFAULT_GOAL := all
