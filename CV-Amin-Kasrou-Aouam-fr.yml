@@ -1,0 +1,117 @@
+---
+name:          Amin
+lastname:      Kasrou Aouam
+phone:         "+32456369230"
+address:       "Gand, Belgique"
+email:         akasroua@disroot.org
+gitlab:        akasroua
+linkedin:      akasroua
+lang:          fr
+#publications:  '\*'
+
+about:         |
+  Ingénieur informatique interessé en bioinformatique, Intelligence artificielle e Infrastructure as Code (IaC)
+
+education:
+- years:
+    start: 2021
+    end: présent
+  degree:      Master
+  focus:       Bioinformatique (Ingénierie)
+  institution:  "Universiteit Gent"
+
+- years:
+    start: 2017
+    end: 2021
+  degree:      Licence
+  focus:       Ingénieur Informatique
+  institution:  "Universidad de Granada"
+
+thesis:
+- name: "Machine Learning pour la correction des erreurs dans les données de séquençage de l'ADN"
+  studies: Mémoire de licence
+
+technologies:
+- category: Langages de programmation
+  items:
+    - Python
+    - R
+    - C++
+    - Java
+    - PHP
+    - Shell scripting
+- category: Outils
+  items:
+    - \LaTeX
+    - Git
+    - SQL
+    - ZFS
+    - Nginx
+    - Nix
+    - MQTT
+    - Prometheus
+    - Grafana
+- category: Plateformes
+  items:
+    - Linux
+    - FreeBSD
+    - DragonFlyBSD
+    - Android
+    - NixOS
+
+projects:
+- "Bot Telegram pour avertir les étudiants des cas de COVID-19 (Python)"
+- "Configuration déclarative d'un serveur domestique et d'un ordinateur (Nix)"
+- "Contributions open source à NixOS (Nix)"
+- "Monitorage de la température et de l'humidité avec MQTT (Arduino)"
+
+languages:
+- language: Anglais
+  proficiency: TOEFL (106/120)
+
+- language: Français
+  proficiency: Maternelle
+
+- language: Espagnol
+  proficiency: Maternelle
+
+- language: Arabe (Dialecte marocain)
+  proficiency: Maternelle
+
+courses:
+- name: Principes fondamentaux de la robotique
+  institution: Adams Formación
+
+- name: Programmation en Python
+  institution: Universidad de Granada
+
+- name: Programmation d'applications mobiles pour Android et iOS
+  institution: Universidad de Granada
+
+- name: Arduino
+  institution: Universidad de Granada
+
+experience:
+- company: COACE
+  years:
+    start: "Janvier 2021"
+    end: "Juillet 2021"
+  position: Indépendant
+  city: Ceuta
+  country: Espagne
+  description:
+    - "Administrateur système de l'ordre des architectes"
+    - "Migration d'un serveur Ubuntu/Windows non documenté vers NixOS"
+    - "Déploiement d'un VPN, d'un cloud, d'un serveur DNS et d'un système de backup automatisée"
+- company: Odyfo
+  years:
+    start: "March 2020"
+    end: "September 2021"
+  position: Indépendant
+  city: À distance
+  country: Espagne
+  description:
+    - "Réécriture partielle d'une API CRUD qui proportionne les données aux applications mobiles en utilisant Python (FastAPI)"
+    - "Gestion et conseil en matière de gestion des ressources informatiques"
+    - "Déploiement et refactorisation de l'application Android"
+---

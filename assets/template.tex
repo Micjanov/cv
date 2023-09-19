@@ -50,7 +50,7 @@
 
 \ifthenelse{\equal{$lang$}{en}}
     {\section{Work Experience}}
-    {\section{Experiencia laboral}}
+    {\section{Expérience professionelle}}
 $for(experience)$
 \cventry{$experience.years.start$ \textendash{} $experience.years.end$}{$experience.position$}{$experience.company$}{$experience.city$}{$experience.country$}{
   \begin{tightitems}
@@ -62,14 +62,14 @@ $endfor$
 
 \ifthenelse{\equal{$lang$}{en}}
     {\section{Education}}
-    {\section{Educación}}
+    {\section{Formation}}
 $for(education)$
   \cventry{$education.years.start$ \textendash{} $education.years.end$}{$education.degree$}{$education.focus$}{$education.institution$}{}{}
 $endfor$
 
 \ifthenelse{\equal{$lang$}{en}}
     {\subsection{Thesis}}
-    {\subsection{Trabajos de investigación}}
+    {\subsection{Mémoires de fin d'études}}
 $for(thesis)$
   \cvitem{$thesis.studies$}{
     $thesis.name$
@@ -78,7 +78,7 @@ $endfor$
 
 \ifthenelse{\equal{$lang$}{en}}
     {\subsection{Courses}}
-    {\subsection{Cursos}}
+    {\subsection{Cours de formation}}
 $for(courses)$
   \cvitem{$courses.name$}{
     $courses.institution$
@@ -88,7 +88,7 @@ $endfor$
 
 \ifthenelse{\equal{$lang$}{en}}
     {\section{Technologies}}
-    {\section{Tecnologías}}
+    {\section{Technologies}}
 $for(technologies)$
   \cvline{$technologies.category$}{
   \begin{itemize*}[label=, itemjoin={{,}}]
@@ -101,7 +101,7 @@ $endfor$
 
 \ifthenelse{\equal{$lang$}{en}}
     {\section{Personal Projects}}
-    {\section{Proyectos personales}}
+    {\section{Projets personnels}}
     \cvitem{}{
       \begin{tightitems}
         $for(projects)$
@@ -112,7 +112,7 @@ $endfor$
 
 \ifthenelse{\equal{$lang$}{en}}
     {\section{Languages}}
-    {\section{Idiomas}}
+    {\section{Langues}}
 $for(languages)$
   \cvlanguage{$languages.language$}{
     $languages.proficiency$
