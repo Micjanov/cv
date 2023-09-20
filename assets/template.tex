@@ -52,7 +52,8 @@
     {\section{Work Experience}}
     {\section{Expérience professionelle}}
 $for(experience)$
-\cventry{$experience.years.start$ \textendash{} $experience.years.end$}{$experience.position$}{$experience.company$}{$experience.city$}{$experience.country$}{
+\cventry{$experience.years.start$ \textendash{} $experience.years.end$}{$experience.position$}{$experience.company$}{}{$experience.location$}{
+  \vspace{0.01cm}
   \begin{tightitems}
     $for(experience.description)$
       \item $experience.description$

@@ -96,20 +96,18 @@ experience:
   years:
     start: "January 2021"
     end: "July 2021"
-  position: Freelance
-  city: Ceuta
-  country: Spain
+  location: Ceuta (Spain)
+  position: System administrator (Freelance)
   description:
-    - "System administrator of a regulatory college"
+    - "IT support and management of multiple Windows workstations"
     - "Migration from a completely undocumented Ubuntu/Windows server to NixOS"
     - "Deployment of a VPN, a cloud, DNS server and an automated backup solution"
 - company: Odyfo
   years:
     start: "March 2020"
     end: "September 2021"
-  position: Freelance
-  city: Remote
-  country: Spain
+  location: Remote
+  position: IT consultant (Freelance)
   description:
     - "Partial rewrite of a CRUD API that serves mobile apps using Python (FastAPI)"
     - "Management and counsel on the management of the IT resources"

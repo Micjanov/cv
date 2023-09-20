@@ -70,13 +70,13 @@ languages:
   proficiency: TOEFL (106/120)
 
 - language: Français
-  proficiency: Maternelle
+  proficiency: Langue maternelle
 
 - language: Espagnol
-  proficiency: Maternelle
+  proficiency: Langue maternelle
 
 - language: Arabe (Dialecte marocain)
-  proficiency: Maternelle
+  proficiency: Langue maternelle
 
 courses:
 - name: Principes fondamentaux de la robotique
@@ -96,22 +96,20 @@ experience:
   years:
     start: "Janvier 2021"
     end: "Juillet 2021"
-  position: Indépendant
-  city: Ceuta
-  country: Espagne
+  location: Ceuta (Espagne)
+  position: Administrateur système (Freelance)
   description:
-    - "Administrateur système de l'ordre des architectes"
+    - "Support informatique et gestion de plusieurs postes de travail Windows"
     - "Migration d'un serveur Ubuntu/Windows non documenté vers NixOS"
     - "Déploiement d'un VPN, d'un cloud, d'un serveur DNS et d'un système de backup automatisée"
 - company: Odyfo
   years:
-    start: "March 2020"
-    end: "September 2021"
-  position: Indépendant
-  city: À distance
-  country: Espagne
+    start: "Mars 2020"
+    end: "Septembre 2021"
+  location: À distance
+  position: Consultant en informatique (Freelance)
   description:
-    - "Réécriture partielle d'une API CRUD qui proportionne les données aux applications mobiles en utilisant Python (FastAPI)"
+    - "Réécriture partielle d'une API qui fournit les données aux applications mobiles en Python (FastAPI)"
     - "Gestion et conseil en matière de gestion des ressources informatiques"
     - "Déploiement et refactorisation de l'application Android"
 ---
