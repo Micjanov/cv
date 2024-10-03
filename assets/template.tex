@@ -1,4 +1,4 @@
-\documentclass[11pt,letterpaper]{moderncv}
+\documentclass[12pt,letterpaper]{moderncv}
 
 \usepackage{fontspec}
 \usepackage{fontawesome5}
@@ -11,14 +11,15 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.75,right=.45in,left=.45in,top=.4in,bottom=.4in]{geometry}
+%\usepackage{wasysym}
 
 % Change email icon
 \providecommand*{\emailsymbol}{}
 \renewcommand*{\emailsymbol}{{\small\faEnvelope}~}
 
 % Workaround to show gitlab icon in social
-\providecommand*{\gitlabsocialsymbol}{}
-\renewcommand*{\gitlabsocialsymbol}{{\small\faGitlab}~}
+\providecommand*{\githubsymbol}{}
+\renewcommand*{\githubsymbol}{{\small\faGitHub}~}
 
 %% Personal data
 \firstname{$name$}
@@ -27,7 +28,7 @@
 \phone{$phone$}
 \address{}{\faIcon{map} $address$}
 \email{$email$}
-\social[gitlab][gitlab.com/$gitlab$]{$gitlab$}
+\social[github][github.com/$github$]{$github$}
 \social[linkedin][linkedin.com/in/$linkedin$]{$linkedin$}
 \photo[64pt][0.4pt]{assets/photo.png}
 
@@ -43,14 +44,12 @@
                {\end{itemize}\vspace{-10pt}}
 
 \begin{document}
-\setmainfont[
-  BoldFont = * Bold
-]{Cormorant Garamond}
+\setmainfont{Cormorant Garamond}
 \makecvtitle{}
 
 \ifthenelse{\equal{$lang$}{en}}
     {\section{Work Experience}}
-    {\section{Expérience professionelle}}
+    {\section{Werkervaring}}
 $for(experience)$
 \cventry{$experience.years.start$ \textendash{} $experience.years.end$}{$experience.position$}{$experience.company$}{}{$experience.location$}{
   \vspace{0.01cm}
@@ -63,33 +62,33 @@ $endfor$
 
 \ifthenelse{\equal{$lang$}{en}}
     {\section{Education}}
-    {\section{Formation}}
+    {\section{Opleidingen}}
 $for(education)$
   \cventry{$education.years.start$ \textendash{} $education.years.end$}{$education.degree$}{$education.focus$}{$education.institution$}{}{}
 $endfor$
 
 \ifthenelse{\equal{$lang$}{en}}
     {\subsection{Thesis}}
-    {\subsection{Mémoires de fin d'études}}
+    {\subsection{Thesis}}
 $for(thesis)$
   \cvitem{$thesis.studies$}{
     $thesis.name$
   }{}
 $endfor$
 
-\ifthenelse{\equal{$lang$}{en}}
-    {\subsection{Courses}}
-    {\subsection{Cours de formation}}
-$for(courses)$
-  \cvitem{$courses.name$}{
-    $courses.institution$
-  }{}
-$endfor$
+%\ifthenelse{\equal{$lang$}{en}}
+%    {\subsection{Courses}}
+%    {\subsection{Cours de formation}}
+%$for(courses)$
+%  \cvitem{$courses.name$}{
+%    $courses.institution$
+%  }{}
+%$endfor$
 
 
 \ifthenelse{\equal{$lang$}{en}}
     {\section{Technologies}}
-    {\section{Technologies}}
+    {\section{Technologieën}}
 $for(technologies)$
   \cvline{$technologies.category$}{
   \begin{itemize*}[label=, itemjoin={{,}}]
@@ -102,18 +101,18 @@ $endfor$
 
 \ifthenelse{\equal{$lang$}{en}}
     {\section{Personal Projects}}
-    {\section{Projets personnels}}
+    {\section{Hobby's}}
     \cvitem{}{
       \begin{tightitems}
-        $for(projects)$
-          \item $projects$
+        $for(hobbies)$
+          \item $hobbies$
         $endfor$
       \end{tightitems}
     }
 
 \ifthenelse{\equal{$lang$}{en}}
     {\section{Languages}}
-    {\section{Langues}}
+    {\section{Talen}}
 $for(languages)$
   \cvlanguage{$languages.language$}{
     $languages.proficiency$

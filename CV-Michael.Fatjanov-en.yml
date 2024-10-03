@@ -1,0 +1,87 @@
+---
+name:          Michael
+lastname:      Fatjanov
+phone:         "+3270023165"
+address:       "Ghent, Belgium"
+email:         mfatjanov@proton.me
+github:        Micjanov
+linkedin:      michaelfatjanov
+lang:          en
+#publications:  '\*'
+
+about:         |
+  Pragmatic and curious software engineer interested in development, bioinformatics and AI
+
+education:
+- years:
+    start: 2021
+    end: 2023
+  degree:      MSc
+  focus:       Bioinformatics (Systems Biology)
+  institution:  "Ghent University"
+
+- years:
+    start: 2017
+    end: 2020
+  degree:      BSc
+  focus:       Chemistry
+  institution:  "Hasselt University"
+
+thesis:
+- name: "The potential of hyperdimensional computing for protein sequence representation"
+  studies: Master thesis
+
+technologies:
+- category: Programming languages
+  items:
+    - Kotlin
+    - Java
+    - JavaScript/TypeScript
+    - Python
+    - Julia
+    - R
+    - Rust
+    - Go
+    - Shell scripting
+- category: Tools
+  items:
+    - \LaTeX
+    - Git
+    - SQL (PostgreSQL, MSSQL, MySQL)
+    - Vue.Js
+    - Spring (Boot)
+    - GitLab CI/CD
+    - scikit-learn
+    - PyTorch/TensorFlow
+    - RedHat OpenShift
+
+hobbies:
+- "Guitarist in a band, also playing bass, drums and vocals, interested in all things music"
+- "Sports (triathlon/marathons, weightlifting, boxing)"
+- "Hobbyist electronics (RaspberryPi, electronic circuit design etc.)"
+
+languages:
+- language: English
+  proficiency: Professional proficiency
+
+- language: Dutch
+  proficiency: Native
+
+- language: Russian
+  proficiency: Moderate
+
+- language: French
+  proficiency: Dormant
+
+experience:
+- company: Axians
+  years:
+    start: "September 2023"
+#    end: ""
+  location: Merelbeke (Belgium)
+  position: Software Engineer
+  description:
+    - "Java/Kotlin back end and Vue.Js front end software development"
+    - "A project for Belgian Cancer Registry, where we maintained and developed their daily-use applications"
+    - "Experience in tackling complex large-scale data questions and medical data standards, including FHIR"
+---

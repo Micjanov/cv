@@ -1,0 +1,87 @@
+---
+name:          Michael
+lastname:      Fatjanov
+phone:         "+3270023165"
+address:       "Gent, België"
+email:         mfatjanov@proton.me
+github:        Micjanov
+linkedin:      michaelfatjanov
+lang:          nl
+#publications:  '\*'
+
+about:         |
+  Pragmatische en nieuwsgierige software engineer met interesse in ontwikkeling, bio-informatica en AI.
+
+education:
+  - years:
+      start: 2021
+      end: 2023
+    degree:      MSc
+    focus:       Bioinformatics (Systems Biology)
+    institution:  "Universiteit Gent"
+
+  - years:
+      start: 2017
+      end: 2020
+    degree:      BSc
+    focus:       Chemie
+    institution:  "Universiteit Hasselt"
+
+thesis:
+  - name: "The potential of hyperdimensional computing for protein sequence representation"
+    studies: Masterthesis
+
+technologies:
+  - category: Programmeertalen
+    items:
+      - Kotlin
+      - Java
+      - JavaScript/TypeScript
+      - Python
+      - Julia
+      - R
+      - Rust
+      - Go
+      - Shell scripting
+  - category: Tools
+    items:
+      - \LaTeX
+      - Git
+      - SQL (PostgreSQL, MSSQL, MySQL)
+      - Vue.Js
+      - Spring (Boot)
+      - GitLab CI/CD
+      - scikit-learn
+      - PyTorch/TensorFlow
+      - RedHat OpenShift
+
+hobbies:
+  - "Gitarist in een band, speelt ook bas, drums en zang, met interesse in alles wat met muziek te maken heeft."
+  - "Sporten (triatlon/marathons, gewichtheffen, boksen)"
+  - "Hobbyist elektronica (Raspberry Pi, ontwerp van elektronische schakelingen, enz.)"
+
+languages:
+  - language: Engels
+    proficiency: Professionele vaardigheid
+
+  - language: Nederlands
+    proficiency: Moedertaal
+
+  - language: Russisch
+    proficiency: Gemiddeld
+
+  - language: Frans
+    proficiency: Inactief
+
+experience:
+  - company: Axians
+    years:
+      start: "September 2023"
+    #    end: ""
+    location: Merelbeke (België)
+    position: Software Engineer
+    description:
+      - "Java/Kotlin backend- en Vue.Js frontend-ontwikkeling"
+      - "Een project voor het Belgische Kankerregister, waar we hun dagelijkse toepassingen onderhouden en ontwikkelen"
+      - "Ervaring met het aanpakken van complexe, grootschalige datavraagstukken en medische datastandaarden, waaronder FHIR"
+---
