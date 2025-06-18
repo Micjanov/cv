@@ -35,7 +35,7 @@ TEMP_DIR := tmp
 
 PANDOC := pandoc --template $(PANDOC_TMPL) $(PANDOC_OPTIONS)
 
-LATEXMK := latexmk $(if $(xelatex),-xelatex,-pdflatex="pdflatex %O %S") \
+LATEXMK := latexmk $(if $(xelatex),-xelatex -f,-pdflatex="pdflatex %O %S") \
 	$(if $(latex_quiet),-silent,-verbose)
 
 ## ---- build rules ----

@@ -49,14 +49,16 @@ technologies:
     - Git
     - SQL (PostgreSQL, MSSQL, MySQL)
     - Vue.Js
+    - React
     - Spring (Boot)
     - GitLab CI/CD
+    - Docker
     - scikit-learn
     - PyTorch/TensorFlow
     - RedHat OpenShift
 
 hobbies:
-- "Guitarist in a band, also playing bass, drums and vocals, interested in all things music"
+- "Guitarist in a metal band, also playing bass, drums and vocals, interested in all things music"
 - "Sports (triathlon/marathons, weightlifting, boxing)"
 - "Hobbyist electronics (RaspberryPi, electronic circuit design etc.)"
 
@@ -82,6 +84,6 @@ experience:
   position: Software Engineer
   description:
     - "Java/Kotlin back end and Vue.Js front end software development"
-    - "A project for Belgian Cancer Registry, where we maintained and developed their daily-use applications"
+    - "Projects for Belgian Cancer Registry (BCR) and Centrum voor Kankeropsporing (CvKO), where we maintain and develop their daily-use applications"
     - "Experience in tackling complex large-scale data questions and medical data standards, including FHIR"
 ---

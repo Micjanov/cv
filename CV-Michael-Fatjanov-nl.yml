@@ -34,29 +34,13 @@ thesis:
 technologies:
   - category: Programmeertalen
     items:
-      - Kotlin
-      - Java
-      - JavaScript/TypeScript
-      - Python
-      - Julia
-      - R
-      - Rust
-      - Go
-      - Shell scripting
+      - Kotlin, Java, JavaScript/TypeScript, Python, Julia, R, Rust, Go, Shell scripting
   - category: Tools
     items:
-      - \LaTeX
-      - Git
-      - SQL (PostgreSQL, MSSQL, MySQL)
-      - Vue.Js
-      - Spring (Boot)
-      - GitLab CI/CD
-      - scikit-learn
-      - PyTorch/TensorFlow
-      - RedHat OpenShift
+      - \LaTeX, Git, SQL (PostgreSQL, MSSQL, MySQL), Vue.Js, React, Spring (Boot), GitLab CI/CD, Docker, scikit-learn, PyTorch/TensorFlow, RedHat OpenShift
 
 hobbies:
-  - "Gitarist in een band, speelt ook bas, drums en zang, met interesse in alles wat met muziek te maken heeft."
+  - "Gitarist in een metal band, speelt ook bas, drums en zang, met interesse in alles wat met muziek te maken heeft."
   - "Sporten (triatlon/marathons, gewichtheffen, boksen)"
   - "Hobbyist elektronica (Raspberry Pi, ontwerp van elektronische schakelingen, enz.)"
 
@@ -82,6 +66,6 @@ experience:
     position: Software Engineer
     description:
       - "Java/Kotlin backend- en Vue.Js frontend-ontwikkeling"
-      - "Een project voor het Belgische Kankerregister, waar we hun dagelijkse toepassingen onderhouden en ontwikkelen"
+      - "Project voor het Belgische Kankerregister (BCR) en het Centrum voor Kankeropsporing (CvKO), waar we hun dagelijkse toepassingen onderhouden en ontwikkelen"
       - "Ervaring met het aanpakken van complexe, grootschalige datavraagstukken en medische datastandaarden, waaronder FHIR"
 ---
