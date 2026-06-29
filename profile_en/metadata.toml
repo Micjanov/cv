@@ -1,0 +1,47 @@
+#:schema https://raw.githubusercontent.com/yunanwg/brilliant-CV/main/metadata.toml.schema.json
+
+# Profile: English. Switch profiles at compile time:
+#     typst compile cv.typ --input profile=nl
+
+header_quote = "Pragmatic and curious software engineer interested in development, bioinformatics and AI"
+cv_footer = "Curriculum vitae"
+letter_footer = "Cover letter"
+
+[layout]
+    awesome_color = "skyblue"
+    before_section_skip = "8pt"
+    before_entry_skip = "6pt"
+    before_entry_description_skip = "1pt"
+    paper_size = "us-letter"
+    date_width = "3.6cm"
+
+    font_size = "11pt"
+
+    [layout.header]
+        header_align = "left"
+        display_profile_photo = true
+        profile_photo_radius = "50%"
+        info_font_size = "10pt"
+
+    [layout.entry]
+        display_entry_society_first = true
+        display_logo = false
+
+    [layout.section]
+        title_highlight = "full"
+        title_highlight_letters = 3
+
+    [layout.footer]
+        display_page_counter = false
+        display_footer = true
+
+[personal]
+    first_name = "Michael"
+    last_name = "Fatjanov"
+
+    [personal.info]
+        phone = "+3270023165"
+        email = "mfatjanov@proton.me"
+        github = "Micjanov"
+        linkedin = "michaelfatjanov"
+        location = "Ghent, Belgium"
