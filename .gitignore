@@ -1,1 +1,3 @@
-*.tex
+# Typst build cache (kept compiled PDFs tracked)
+*.png
+

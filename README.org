@@ -1,28 +1,33 @@
 * Curriculum vitae
 
-Curriculum vitae template that uses LaTeX for rendering, via Pandoc.
-
+Bilingual (EN/NL) curriculum vitae rendered with [[https://typst.app][Typst]]
+using the [[https://typst.app/universe/package/brilliant-cv][brilliant-cv]]
+package. No LaTeX, Pandoc or Make required.
 
 ** Requirements
 
-- Pandoc
-- GNU Make
-- LaTeX (only tested with TeX Live)
+- Typst (>= 0.14)
+- The bundled fonts in =fonts/= (Font Awesome 7, Source Sans 3, Roboto)
 
-** Configuration
+** Layout
 
-- Sections and layout: assets/template.latex
-- Details: input/%.yml
+- Entry point: =cv.typ=
+- Content per language: =profile_en/= and =profile_nl/= (one =metadata.toml=
+  plus a =.typ= module per section: experience, education, technologies,
+  hobbies, languages)
+- Photo: =assets/photo.png=
 
-The /lang/ variable allows you to have different section names, if you want a
-bilingual CV.
+To add a language, copy a =profile_<code>/= directory and translate it.
 
 ** Usage
 
-Compile the documents using make
-
 #+BEGIN_SRC sh
-  make
+  typst compile --font-path fonts cv.typ --input profile=en CV-Michael.Fatjanov-en.pdf
+  typst compile --font-path fonts cv.typ --input profile=nl CV-Michael-Fatjanov-nl.pdf
 #+END_SRC
 
-The pdf documents will appear in the *output* folder.
+Live preview while editing:
+
+#+BEGIN_SRC sh
+  typst watch --font-path fonts cv.typ --input profile=en
+#+END_SRC
